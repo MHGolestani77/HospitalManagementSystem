@@ -1,0 +1,557 @@
+@font-face {
+	font-family: 'yekan';
+	src: url('../fonts/Yekan.eot');
+	src: url('../fonts/Yekan.eot?#iefix') format('embedded-opentype'),
+		 url('../fonts/Yekan.woff') format('woff'),
+		 url('../fonts/Yekan.ttf') format('truetype'),
+		 url('../fonts/Yekan.svg#yekan') format('svg');
+	font-style: normal;
+	font-weight: bold;
+}
+
+@font-face {
+    font-family: 'myriad';
+    src: url('../fonts/MYRIADPROREGULAR.eot');
+    src: url('../fonts/MYRIADPROREGULAR.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/MYRIADPROREGULAR.woff') format('woff'),
+         url('../fonts/MYRIADPROREGULAR.ttf') format('truetype');
+    font-style: normal;
+    font-weight: bold;
+}
+
+@font-face {
+    font-family: 'IRANSans';
+    src: url('../fonts/IRANSansWebFaNum.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'IRANSans';
+    src: url('../fonts/IRANSansWebFaNum-Medium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'IRANSans';
+    src: url('../fonts/IRANSansWebFaNum-UltraLight.ttf') format('truetype');
+    font-weight: 100;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'IRANSans';
+    src: url('../fonts/IRANSansWebFaNum-Light.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'IRANSans';
+    src: url('../fonts/IRANSansWebFaNum-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'IRANYekan';
+    src: url('../fonts/IRANYekanWebFaNum.eot');
+    src: url('../fonts/IRANYekanWebFaNum.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/IRANYekanWebFaNum.woff') format('woff'),
+    url('../fonts/IRANYekanWebFaNum.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'IRANYekan';
+    src: url('../fonts/IRANYekanWebFaNum-Light.eot');
+    src: url('../fonts/IRANYekanWebFaNum-Light.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/IRANYekanWebFaNum-Light.woff') format('woff'),
+    url('../fonts/IRANYekanWebFaNum-Light.ttf') format('truetype');
+    font-weight: 100;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'IRANYekan';
+    src: url('../fonts/IRANYekanWebFaNum-Bold.eot');
+    src: url('../fonts/IRANYekanWebFaNum-Bold.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/IRANYekanWebFaNum-Bold.woff') format('woff'),
+    url('../fonts/IRANYekanWebFaNum-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+* {
+	font-family: IRANSans , IRANYekan;
+	direction: rtl;
+    text-align: right;
+	-webkit-transition: all 0.4s;
+	-o-transition: all 0.4s;
+	transition: all 0.4s;
+}
+
+
+/*colors*/
+
+
+li {
+    list-style: none;
+}
+
+a {
+    color:#212529;
+}
+
+a:hover {
+    text-decoration: none;
+    color:#000000;
+}
+
+hr {
+    margin-top: 10px;
+}
+
+
+p , .h5 , .h6 {
+	line-height: 28px;
+}
+
+select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+}
+
+body {
+	background: #e9ecf3;
+}
+
+body.login {
+    background: linear-gradient(#343a40,#7c7d7d00) no-repeat, url(../img/1.jpg) fixed center center no-repeat;
+    background-size: cover;
+}
+
+input , button {
+    outline: hidden;
+}
+
+/* Header */
+div#header {
+
+}
+
+div#header div.logo {
+    text-align: center;
+    /*background: linear-gradient(#343a40,#7c7d7d00) no-repeat, url(../img/1.jpg) fixed center center no-repeat;
+    background-size: cover;*/
+}
+
+div#header div.logo img {
+    display: inline-block;
+}
+
+div#header nav form img {
+	width: 40px;
+	height: 40px;
+	margin-left: 10px;
+	border-radius: 100%;
+	cursor: pointer;
+}
+
+div#header nav form div a {
+	color: #fff;
+}
+
+div#header nav form div div a {
+	color: #343a40;
+}
+
+/* Login */
+div.login{
+    background-color: white;
+    padding: 20px;
+}
+div.login *{
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+div#login {
+    
+}
+div#login div.row {
+
+}
+div#login div.row div {
+    text-align: center;
+}
+div#login div.row div p {
+    font-weight: 600;
+    font-size: 20px;
+    color: #fff;
+    text-align: center;
+    text-shadow: #000 0px 0 20px;
+    opacity: 0;
+}
+div#login div.row div img {
+    opacity: 0;
+}
+div#login div.row div div.login {
+    opacity: 0;
+    padding: 10px 20px;
+    display: inline-block;
+}
+
+/* Main */
+div#main {
+    padding: 10px;
+    background: linear-gradient(#343a40,#7c7d7d00) no-repeat, url(../img/1.jpg) fixed center center no-repeat;
+    background-size: cover;
+    margin-bottom: 0;
+}
+div#main div.logo {
+    text-align: center;
+}
+div#main div.logo img {
+    display: inline-block;
+}
+div#main div.container {
+    border-radius: 10px;
+    background: #fff;
+    padding: 10px;
+    opacity: 0;
+}
+div#main div.container div.selectForm {
+    padding: 10px;
+}
+div#main div.container div.selectForm i {
+    color: #319f8f;
+}
+div#main div.container div.selectForm p {
+    margin: 20px;
+}
+div#main div.container div.selectForm p.h4 {
+    color: #319f8f;
+}
+div#main div.container div.selectForm form {
+    margin: 0 auto;
+    text-align: center;
+}
+div#main div.container div.selectForm form div.row {
+    padding: 5px 0;
+}
+div#main div.container div.selectForm form div.row label {
+    text-align: center;
+    line-height: 34px;
+}
+div#main div.container div.selectForm form div.row i {
+    text-align: center;
+    line-height: 34px;
+}
+div#main div.container div.selectForm form div.row select {
+    padding-right: 50px;
+    border: 1px solid #5bada1;
+  background-image:
+    -webkit-linear-gradient(bottom left, transparent 50%, white 50%),
+    -webkit-linear-gradient(top left, white 50%, transparent 50%),
+    -webkit-linear-gradient(left, #5bada1, #5bada1);
+  background-image:
+    -o-linear-gradient(bottom left, transparent 50%, white 50%),
+    -o-linear-gradient(top left, white 50%, transparent 50%),
+    -o-linear-gradient(left, #5bada1, #5bada1);
+  background-image:
+    linear-gradient(to top right, transparent 50%, white 50%),
+    linear-gradient(to bottom right, white 50%, transparent 50%),
+    linear-gradient(to right, #5bada1, #5bada1);;
+  background-position:
+    calc(100% - 20px) calc(1em + 2px),
+    calc(100% - 15px) calc(1em + 2px),
+    100% 0;
+  background-size:
+    5px 5px,
+    5px 5px,
+    2.5em 2.5em;
+  background-repeat: no-repeat;
+    background-color: aliceblue;
+    color: #25786c; 
+    line-height: 40px;
+}
+div#main div.container div.selectForm form div.row select option {
+      
+}
+div#main div.container div.selectForm form div.row input {
+    border: 1px solid #5bada1;
+    background-color: aliceblue;
+    color: #25786c;
+    text-align: center;
+}
+div#main div.container div.selectForm form div.row textarea {
+    border: 1px solid #5bada1;
+    background-color: aliceblue;
+    color: #25786c;
+    text-align: center;
+}
+div#main div.container div.selectForm form div.row input[type="text"] {
+    line-height: 40px;
+}
+div#main div.container div.selectForm form div.row input[type="password"] {
+    line-height: 40px;
+}
+div#main div.container div.selectForm form div.row input[type="submit"] {
+    background: #5bada1;
+    color: #fff;
+    margin: 0 auto;
+}
+div#main div.container div.listForm {
+    padding: 10px;
+    overflow-x: scroll;
+}
+div#main div.container div.listForm p {
+    margin: 20px;
+}
+div#main div.container div.listForm p.h4 {
+
+}
+div#main div.container div.listForm table {
+    margin: 0 auto 30px;
+}
+div#main div.container div.listForm table tr:first-child {
+    background: #5bada1;
+    color: #ffffff;
+}
+div#main div.container div.listForm table tr {
+    background: aliceblue;
+    color: #378277;
+    cursor: pointer;
+}
+div#main div.container div.listForm table tr.disabled {
+    /*color: #ff0000;*/
+}
+div#main div.container div.listForm table tr th {
+    text-align: center;
+}
+div#main div.container div.listForm table tr td {
+    text-align: center;
+}
+div#main div.container div.listForm table tr:oddchiled {
+
+}
+
+/*login*/
+div#login {
+    margin-bottom: 20px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+div#login div.row {
+    text-align: center;
+}
+
+div#login div.row div {
+    margin: 0 auto;
+}
+
+/*dashBoard*/
+
+div#main div.container div.row ul {
+    padding: 10px;
+    border-radius: 5px;
+}
+div#main div.container div.row div.message {
+    padding-bottom: 15px;
+}
+div#main div.container div.row div.message div.row {
+
+}
+div#main div.container div.row div.message div.row h4 {
+
+}
+div#main div.container div.row div.message div.row p {
+    margin: 0;
+}
+div#main div.container div.row div.message div.row button {
+    
+}
+div#main div.container div.row div.talks{
+    
+}
+div#main div.container div.row div.talks h4{
+
+}
+div#main div.container div.row div.talks p{
+
+}
+div#main div.container div.row div.talks button{
+    
+}
+div#main div.container div.row div.activations{
+    padding-bottom: 15px;
+}
+div#main div.container div.row div.activations h4{
+
+}
+div#main div.container div.row div.activations p{
+
+}
+div#main div.container div.row div.activations button{
+    
+}
+div#main div.container div.row div.bases{
+    padding-bottom: 15px;
+}
+div#main div.container div.row div.bases h4{
+    color: #9863B4;
+}
+div#main div.container div.row div.bases p{
+
+}
+div#main div.container div.row div.bases button{
+    background-color: #9863B4;
+    color: #fff;
+}
+div#main div.container div.row div.bases button:hover{
+    background-color: #8859A0;
+    color: #fff;
+}
+
+
+/*Account*/
+
+div#main div#account {
+
+}
+div#main div#account div.container {
+
+}
+div#main div#account div.container div.row {
+
+}
+div#main div#account div.container div.row div {
+
+}
+div#main div#account div.container div.row div ul {
+    padding: 15px 0;
+}
+div#main div#account div.container div.row div ul li {
+    text-align: center;
+    list-style: none;
+    padding: 10px 0;
+}
+div#main div#account div.container div.row div ul li a {
+    color: #000;
+    text-decoration: none;
+}
+div#main div#account div.container div.row div ul li a i {
+    color: #319f8f;
+    font-size: 25px;
+    padding: 10px;
+}
+div#main div#account div.container div.row div ul li a p {
+    text-align: center;
+}
+div#account div.container div.row div div.selectForm.account div {
+    height: auto;
+    overflow: unset;
+}
+
+/*Setting.php*/
+div#account div.container div.row div div.selectForm div {
+    height: 450px;
+    overflow-y: scroll;
+}
+div#account div.container div.row div div.selectForm div table tr th,
+div#account div.container div.row div div.selectForm div table tr td  {
+    text-align: center;
+}
+
+/*Footer*/
+div#footer {
+    margin-top: -8px;
+	text-align: center;
+    height: 50px;
+}
+div#footer p {
+	line-height: 50px;
+	color: #fff;
+	text-shadow: 0px 0px 10px #000;
+}
+
+/*Bootstrap*/
+/*.btn-primary {
+    color: #fff;
+    background-color: #009688;
+    border-color: #009688;
+}
+
+.btn-primary:hover {
+    background-color: #06867a;
+    border-color: #06867a;
+}*/
+
+
+.nav-item {
+    text-shadow: 0px 0px 10px #000;
+}
+
+div.dropdown-menu a {
+    text-shadow: none;
+}
+
+.dropdown-menu {
+    text-align: right;
+}
+
+.navbar-dark .navbar-nav .nav-link {
+    color: rgb(179, 179, 179);
+}
+
+.navbar-dark .navbar-nav .nav-link:focus, .navbar-dark .navbar-nav .nav-link:hover {
+    color: rgba(255, 255, 255, 1);
+}
+
+.dropdown-toggle::before {
+    display: inline-block;
+    width: 0;
+    height: 0;
+    margin-left: .255em;
+    vertical-align: .255em;
+    content: "";
+    border-top: .3em solid;
+    border-right: .3em solid transparent;
+    border-bottom: 0;
+    border-left: .3em solid transparent;
+}
+
+.dropdown-toggle::after {
+    display: inline-block;
+    width: 0;
+    height: 0;
+    margin-left: .255em;
+    vertical-align: .255em;
+    content: "";
+    border: none;
+}
+
+/*scroll*/
+
+/* width */
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    background: #f1f1f1; 
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: #888; 
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #555; 
+}
