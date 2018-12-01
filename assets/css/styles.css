@@ -220,7 +220,7 @@ div#main div.container {
     border-radius: 10px;
     background: #fff;
     padding: 10px;
-    opacity: 0;
+    /*opacity: 0;*/
 }
 div#main div.container div.selectForm {
     padding: 10px;
@@ -455,6 +455,139 @@ div#account div.container div.row div div.selectForm.account div {
     height: auto;
     overflow: unset;
 }
+
+
+/*insert.php*/
+div#main div#insert {
+
+}
+div#main div#insert div#right ul {
+    
+}
+div#main div#insert div#right ul li {
+    margin: 20px;
+    border-radius: 5px;
+    height: 100px;
+}
+div#main div#insert div#right ul.insert a:nth-child(1) li {
+    background-color: #39acff;
+    color: #0b5ba1;
+}
+div#main div#insert div#right ul.insert a:nth-child(2) li {
+    background-color: #f9b294;
+    color: #c75243;
+}
+div#main div#insert div#right ul.insert a:nth-child(3) li {
+    background-color: #a5f24a;
+    color: #186d24;
+}
+div#main div#insert div#right ul li p {
+    text-align: center;
+    line-height: 100px;
+}
+div#main div#insert div {
+
+}
+div#main div#insert div form {
+
+}
+div#main div#insert div form div {
+
+}
+div#main div#insert div form div label {
+
+}
+div#main div#insert div form div input {
+    text-align: center;
+}
+div#main div#insert div form div input[type="text"] {
+
+}
+div#main div#insert div form div input[type="submit"] {
+
+}
+div#main div#insert div form div textarea {
+
+}
+div#main div#insert div#add-doctor {
+
+}
+div#main div#insert div#add-doctor form {
+
+}
+div#main div#insert div#add-doctor form div {
+
+}
+div#main div#insert div#add-doctor form div label {
+    color: #0b5ba1;
+}
+div#main div#insert div#add-doctor form div input {
+    background-color: #39acffae;
+    color: #0b5ba1;
+}
+div#main div#insert div#add-doctor form div input[type="text"] {
+
+}
+div#main div#insert div#add-doctor form div input[type="submit"] {
+
+}
+div#main div#insert div#add-doctor form div textarea {
+    background-color: #39acffae;
+    color: #0b5ba1;
+}
+div#main div#insert div#add-clerk {
+
+}
+div#main div#insert div#add-clerk form {
+
+}
+div#main div#insert div#add-clerk form div {
+
+}
+div#main div#insert div#add-clerk form div label {
+    color: #c75243;
+}
+div#main div#insert div#add-clerk form div input {
+    background-color: #f9b294;
+    color: #c75243;
+}
+div#main div#insert div#add-clerk form div input[type="text"] {
+
+}
+div#main div#insert div#add-clerk form div input[type="submit"] {
+
+}
+div#main div#insert div#add-clerk form div textarea {
+    background-color: #f9b294;
+    color: #c75243;
+}
+div#main div#insert div#add-ill {
+
+}
+div#main div#insert div#add-ill form {
+
+}
+div#main div#insert div#add-ill form div {
+
+}
+div#main div#insert div#add-ill form div label {
+    color: #186d24;
+}
+div#main div#insert div#add-ill form div input {
+    background-color: #a5f24a;
+    color: #186d24;
+}
+div#main div#insert div#add-ill form div input[type="text"] {
+
+}
+div#main div#insert div#add-ill form div input[type="submit"] {
+
+}
+div#main div#insert div#add-ill form div textarea {
+    background-color: #a5f24a;
+    color: #186d24;
+}
+
 
 /*Setting.php*/
 div#account div.container div.row div div.selectForm div {
