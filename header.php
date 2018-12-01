@@ -7,7 +7,7 @@
 	<meta charset="UTF-8">
 	<title>HospitalManagementSystem</title>
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
-	<link rel="stylesheet" href="assets/css/styles.css?<?php echo $ref; ?>">
+	<link rel="stylesheet" href="http://localhost/hospitalmanagementsystem/assets/css/styles.css?t=<?php echo $ref; ?>">
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
 </head>
 <body>

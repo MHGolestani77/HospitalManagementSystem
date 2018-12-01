@@ -1,84 +1,84 @@
 @font-face {
 	font-family: 'yekan';
-	src: url('http://hms.com/assets/fonts/Yekan.eot');
-	src: url('http://hms.com/assets/fonts/Yekan.eot?#iefix') format('embedded-opentype'),
-		 url('http://hms.com/assets/fonts/Yekan.woff') format('woff'),
-		 url('http://hms.com/assets/fonts/Yekan.ttf') format('truetype'),
-		 url('http://hms.com/assets/fonts/Yekan.svg#yekan') format('svg');
+	src: url('../fonts/Yekan.eot');
+	src: url('../fonts/Yekan.eot?#iefix') format('embedded-opentype'),
+		 url('../fonts/Yekan.woff') format('woff'),
+		 url('../fonts/Yekan.ttf') format('truetype'),
+		 url('../fonts/Yekan.svg#yekan') format('svg');
 	font-style: normal;
 	font-weight: bold;
 }
 
 @font-face {
     font-family: 'myriad';
-    src: url('http://hms.com/assets/fonts/MYRIADPROREGULAR.eot');
-    src: url('http://hms.com/assets/fonts/MYRIADPROREGULAR.eot?#iefix') format('embedded-opentype'),
-         url('http://hms.com/assets/fonts/MYRIADPROREGULAR.woff') format('woff'),
-         url('http://hms.com/assets/fonts/MYRIADPROREGULAR.ttf') format('truetype');
+    src: url('../fonts/MYRIADPROREGULAR.eot');
+    src: url('../fonts/MYRIADPROREGULAR.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/MYRIADPROREGULAR.woff') format('woff'),
+         url('../fonts/MYRIADPROREGULAR.ttf') format('truetype');
     font-style: normal;
     font-weight: bold;
 }
 
 @font-face {
     font-family: 'IRANSans';
-    src: url('http://hms.com/assets/fonts/IRANSansWebFaNum.ttf') format('truetype');
+    src: url('../fonts/IRANSansWebFaNum.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
     font-family: 'IRANSans';
-    src: url('http://hms.com/assets/fonts/IRANSansWebFaNum-Medium.ttf') format('truetype');
+    src: url('../fonts/IRANSansWebFaNum-Medium.ttf') format('truetype');
     font-weight: 500;
     font-style: normal;
 }
 
 @font-face {
     font-family: 'IRANSans';
-    src: url('http://hms.com/assets/fonts/IRANSansWebFaNum-UltraLight.ttf') format('truetype');
+    src: url('../fonts/IRANSansWebFaNum-UltraLight.ttf') format('truetype');
     font-weight: 100;
     font-style: normal;
 }
 
 @font-face {
     font-family: 'IRANSans';
-    src: url('http://hms.com/assets/fonts/IRANSansWebFaNum-Light.ttf') format('truetype');
+    src: url('../fonts/IRANSansWebFaNum-Light.ttf') format('truetype');
     font-weight: 300;
     font-style: normal;
 }
 
 @font-face {
     font-family: 'IRANSans';
-    src: url('http://hms.com/assets/fonts/IRANSansWebFaNum-Bold.ttf') format('truetype');
+    src: url('../fonts/IRANSansWebFaNum-Bold.ttf') format('truetype');
     font-weight: bold;
     font-style: normal;
 }
 @font-face {
     font-family: 'IRANYekan';
-    src: url('http://hms.com/assets/fonts/IRANYekanWebFaNum.eot');
-    src: url('http://hms.com/assets/fonts/IRANYekanWebFaNum.eot?#iefix') format('embedded-opentype'),
-    url('http://hms.com/assets/fonts/IRANYekanWebFaNum.woff') format('woff'),
-    url('http://hms.com/assets/fonts/IRANYekanWebFaNum.ttf') format('truetype');
+    src: url('../fonts/IRANYekanWebFaNum.eot');
+    src: url('../fonts/IRANYekanWebFaNum.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/IRANYekanWebFaNum.woff') format('woff'),
+    url('../fonts/IRANYekanWebFaNum.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
     font-family: 'IRANYekan';
-    src: url('http://hms.com/assets/fonts/IRANYekanWebFaNum-Light.eot');
-    src: url('http://hms.com/assets/fonts/IRANYekanWebFaNum-Light.eot?#iefix') format('embedded-opentype'),
-    url('http://hms.com/assets/fonts/IRANYekanWebFaNum-Light.woff') format('woff'),
-    url('http://hms.com/assets/fonts/IRANYekanWebFaNum-Light.ttf') format('truetype');
+    src: url('../fonts/IRANYekanWebFaNum-Light.eot');
+    src: url('../fonts/IRANYekanWebFaNum-Light.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/IRANYekanWebFaNum-Light.woff') format('woff'),
+    url('../fonts/IRANYekanWebFaNum-Light.ttf') format('truetype');
     font-weight: 100;
     font-style: normal;
 }
 
 @font-face {
     font-family: 'IRANYekan';
-    src: url('http://hms.com/assets/fonts/IRANYekanWebFaNum-Bold.eot');
-    src: url('http://hms.com/assets/fonts/IRANYekanWebFaNum-Bold.eot?#iefix') format('embedded-opentype'),
-    url('http://hms.com/assets/fonts/IRANYekanWebFaNum-Bold.woff') format('woff'),
-    url('http://hms.com/assets/fonts/IRANYekanWebFaNum-Bold.ttf') format('truetype');
+    src: url('../fonts/IRANYekanWebFaNum-Bold.eot');
+    src: url('../fonts/IRANYekanWebFaNum-Bold.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/IRANYekanWebFaNum-Bold.woff') format('woff'),
+    url('../fonts/IRANYekanWebFaNum-Bold.ttf') format('truetype');
     font-weight: bold;
     font-style: normal;
 }
@@ -127,13 +127,29 @@ body {
 	background: #e9ecf3;
 }
 
+html, body {
+    height: 100%;
+    min-height: 100%;
+    margin: 0;
+    padding: 0;
+}
+div#main{
+    height: 91%;
+    min-height: 91%;
+}
+
 body.login {
-    background: linear-gradient(#343a40,#7c7d7d00) no-repeat, url(../img/1.jpg) fixed center center no-repeat;
+    background: linear-gradient(#343a40,#7c7d7d00) no-repeat, url(../img/back.jpg) fixed center center no-repeat;
     background-size: cover;
 }
 
 input , button {
     outline: hidden;
+}
+
+.row {
+    margin-right: 0;
+    margin-left: 0;
 }
 
 /* Header */
@@ -206,7 +222,7 @@ div#login div.row div div.login {
 /* Main */
 div#main {
     padding: 10px;
-    background: linear-gradient(#343a40,#7c7d7d00) no-repeat, url(../img/1.jpg) fixed center center no-repeat;
+    background: linear-gradient(#343a40,#7c7d7d00) no-repeat, url(../img/back.jpg) fixed center center no-repeat;
     background-size: cover;
     margin-bottom: 0;
 }
@@ -220,6 +236,10 @@ div#main div.container {
     border-radius: 10px;
     background: #fff;
     padding: 10px;
+    height: 100%;
+    min-height: 100%;
+    overflow-y: scroll;
+    overflow-x: hidden;
     /*opacity: 0;*/
 }
 div#main div.container div.selectForm {
