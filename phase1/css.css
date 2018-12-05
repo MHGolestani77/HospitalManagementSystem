@@ -1,0 +1,303 @@
+@font-face {
+	font-family: 'yekan';
+	src: url('../assets/fonts/Yekan.eot');
+	src: url('../assets/fonts/Yekan.eot?#iefix') format('embedded-opentype'),
+		 url('../assets/fonts/Yekan.woff') format('woff'),
+		 url('../assets/fonts/Yekan.ttf') format('truetype'),
+		 url('../assets/fonts/Yekan.svg#yekan') format('svg');
+	font-style: normal;
+	font-weight: bold;
+}
+
+@font-face {
+    font-family: 'myriad';
+    src: url('../assets/fonts/MYRIADPROREGULAR.eot');
+    src: url('../assets/fonts/MYRIADPROREGULAR.eot?#iefix') format('embedded-opentype'),
+         url('../assets/fonts/MYRIADPROREGULAR.woff') format('woff'),
+         url('../assets/fonts/MYRIADPROREGULAR.ttf') format('truetype');
+    font-style: normal;
+    font-weight: bold;
+}
+
+@font-face {
+    font-family: 'IRANSans';
+    src: url('../assets/fonts/IRANSansWebFaNum.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'IRANSans';
+    src: url('../assets/fonts/IRANSansWebFaNum-Medium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'IRANSans';
+    src: url('../assets/fonts/IRANSansWebFaNum-UltraLight.ttf') format('truetype');
+    font-weight: 100;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'IRANSans';
+    src: url('../assets/fonts/IRANSansWebFaNum-Light.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'IRANSans';
+    src: url('../assets/fonts/IRANSansWebFaNum-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'IRANYekan';
+    src: url('../assets/fonts/IRANYekanWebFaNum.eot');
+    src: url('../assets/fonts/IRANYekanWebFaNum.eot?#iefix') format('embedded-opentype'),
+    url('../assets/fonts/IRANYekanWebFaNum.woff') format('woff'),
+    url('../assets/fonts/IRANYekanWebFaNum.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'IRANYekan';
+    src: url('../assets/fonts/IRANYekanWebFaNum-Light.eot');
+    src: url('../assets/fonts/IRANYekanWebFaNum-Light.eot?#iefix') format('embedded-opentype'),
+    url('../assets/fonts/IRANYekanWebFaNum-Light.woff') format('woff'),
+    url('../assets/fonts/IRANYekanWebFaNum-Light.ttf') format('truetype');
+    font-weight: 100;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'IRANYekan';
+    src: url('../assets/fonts/IRANYekanWebFaNum-Bold.eot');
+    src: url('../assets/fonts/IRANYekanWebFaNum-Bold.eot?#iefix') format('embedded-opentype'),
+    url('../assets/fonts/IRANYekanWebFaNum-Bold.woff') format('woff'),
+    url('../assets/fonts/IRANYekanWebFaNum-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+
+*{
+	font-family: IRANSans , IRANYekan;
+	direction: rtl;
+    text-align: right;
+	-webkit-transition: all 0.4s;
+	-o-transition: all 0.4s;
+	transition: all 0.4s;
+}
+
+a, a:hover{
+	text-decoration: none;
+	color: #000;
+}
+
+li{
+	list-style: none;
+}
+
+html, body {
+    height: 100%;
+    min-height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+	background-color: #dadada;
+}
+
+@media (min-width: 768px){
+	.col-md-4 {
+		max-width: 32%;
+		margin: 0.6%;
+	}
+}
+div#main {
+	
+}
+div#main div.container {
+	margin: 20px auto;
+    background: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 11px 0px #8c8c8c;
+}
+div#main div.container div.row {
+	
+}
+div#main div.container div.row div.navbar {
+	width: 100%;
+}
+div#main div.container div.row div.navbar div.col-md-10 {
+	
+}
+div#main div.container div.row div.navbar div.col-md-10 img {
+	width: 100px;
+	display: inline-block;
+}
+div#main div.container div.row div.navbar div.col-md-10 p {
+	display: inline-block;
+}
+div#main div.container div.row div.navbar div.col-md-2 {
+	
+}
+div#main div.container div.row div.navbar div.col-md-2 a {
+	
+}
+div#main div.container div.row div.navbar div.col-md-2 a button {
+	width: 100%;
+}
+div#main div.container div.row div.main {
+	
+}
+div#main div.container div.row div.main div.section {
+	float: right;
+	border-radius: 5px;
+}
+div#main div.container div.row div.main div.section.section1 {
+	background: #d0e2ff;
+}
+div#main div.container div.row div.main div.section.section2 {
+	background: #f34444;
+}
+div#main div.container div.row div.main div.section.section3 {
+	background: #a6fe82;
+}
+div#main div.container div.row div.main div.section div.row {
+	padding: 10px;
+}
+div#main div.container div.row div.main div.section div.row p {
+	font-weight: bold;
+}
+div#main div.container div.row div.main div.section div.row img {
+	width: 100px;
+    height: 100px;
+    margin: 0 auto;
+    border-radius: 5px;
+}
+div#main div.container div.row div.main div.section div.row ul {
+	width: 85%;
+    margin: 0 auto;
+    padding: 0;
+}
+div#main div.container div.row div.main div.section div.row ul a {
+	overflow: hidden;
+}
+div#main div.container div.row div.main div.section div.row ul a li {
+	line-height: 35px;
+	background: #ffffff85;
+	margin: 5px;
+	padding: 0 5px;
+	border-radius: 5px;
+	text-align: center;
+}
+div#main div.container div.row div.main div.section.section1 div.row ul a li:hover{
+	background: #8fcff5;
+}
+div#main div.container div.row div.main div.section.section2 div.row ul a li:hover{
+	background: #d41919;
+}
+div#main div.container div.row div.main div.section.section3 div.row ul a li:hover{
+	background: #6bd241;
+}
+div#main div.container div.row div.main div.section div.row ul.text-right a li {
+	text-align: right;
+}
+div#main div.container div.row div.main div.section div.row ul a li small {
+	
+}
+div#main div.container div.row div.main div.section div.row ul a li small.label {
+	width: 100px;
+	display: inline-block;
+}
+div#main div.container div.row div.main div.section div.row ul a li i {
+
+}
+div#main div.container div.row div.main div.section div.row ul a li span {
+
+}
+div#main div.container div.row div.main div.section div.row a button {
+
+}
+
+/*
+div.navbar{
+
+}
+div.navbar a{
+
+}
+div.navbar a img{
+	width: 120px;
+	height: 35px;
+}
+div.conainer{
+	background-color: #fff;
+}
+div.conainer div.row{
+	
+}
+div.conainer div.row div.doc-name{
+	background-color: #d1e2fe;
+}
+div.conainer div.row img{
+	height: 150px;
+	width: 150px;
+}
+div.conainer div.row ul{
+	
+}
+div.conainer div.row ul li{
+	background-color: #e8f1ff;
+}
+div.conainer div.row ul li span.label-name{
+	text-align: right;
+}
+div.conainer div.row ul li span.label{
+	text-align: center;
+}
+div.conainer div.row div#doc-process{
+	background-color: #f34345;
+}
+div.conainer div.row div#doc-process ul{
+	
+}
+div.conainer div.row div#doc-process ul a{
+	
+}
+div.conainer div.row div#doc-process ul a li{
+	background-color: #fa6465;
+}
+div.conainer div.row div#doc-process ul a:hover li{
+	background-color: #c92f2f;
+}
+div.conainer div.row div#ill-doc-list1{
+	background-color: #a6fe83;
+}
+div.conainer div.row div#ill-doc-list1 ul {
+
+}
+div.conainer div.row div#ill-doc-list1 ul a {
+
+}
+div.conainer div.row div#ill-doc-list1 ul a li {
+	background-color: #7fd45b;
+}
+div.conainer div.row div#ill-doc-list1 ul a:hover li {
+	background-color: #66b645;
+}
+div.conainer div.row div#ill-doc-list1 ul a li h6{
+
+}
+div.conainer div.row div#ill-doc-list1 ul a li p{
+
+}
+div.conainer div.row div#ill-doc-list1 button{
+	background-color: #6bb34d;
+}*/
