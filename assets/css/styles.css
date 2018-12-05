@@ -708,3 +708,113 @@ div.dropdown-menu a {
 ::-webkit-scrollbar-thumb:hover {
     background: #555; 
 }
+
+
+
+
+/*doc dashboard*/
+div.doc-dash div.container{
+    background-color: #fff;
+    padding: 15px;
+    border-radius: 5px;
+}
+
+div.doc-dash div.container div.row{
+
+}
+div.doc-dash div.container div.row div{
+    margin: 40px 8px 30px;
+    border-radius: 5px;
+    padding-bottom: 30px;
+}
+div.doc-dash div.container div.row div#doc-name{
+    background-color: #d1e2fe;
+    padding: 20px;
+
+}
+div.doc-dash div.container div.row img{
+    height: 150px;
+    width: 150px;
+}
+div.doc-dash div.container div.row ul{
+    padding: 0px;
+}
+div.doc-dash div.container div.row ul li{
+    background-color: #e8f1ff;
+    margin-top: 10px;
+    padding-right: 25px;
+    border-radius: 5px;
+    text-align: right;
+    vertical-align: middle;
+    line-height: 50px;
+}
+div.doc-dash div.container div.row ul li span.label-name{
+    text-align: right;
+}
+div.doc-dash div.container div.row ul li span.label{
+
+}
+div.doc-dash div.container div.row div#doc-process{
+    background-color: #f34345;
+    padding-top: 60px;
+}
+div.doc-dash div.container div.row div#doc-process ul{
+    
+}
+div.doc-dash div.container div.row div#doc-process ul a{
+    
+}
+div.doc-dash div.container div.row div#doc-process ul a li{
+    background-color: #fa6465;
+}
+div.doc-dash div.container div.row div#doc-process ul a:hover li{
+    background-color: #c92f2f;
+}
+div.doc-dash div.container div.row div#ill-doc-list1{
+    background-color: #a6fe83;
+    text-align: left;
+    padding-top: 60px;
+}
+div.doc-dash div.container div.row div#ill-doc-list1 ul {
+
+}
+div.doc-dash div.container div.row div#ill-doc-list1 ul a {
+
+}
+div.doc-dash div.container div.row div#ill-doc-list1 ul a li {
+    background-color: #7fd45b;
+    height: 100px;
+    vertical-align: middle;
+    padding-right: 0px;
+}
+div.doc-dash div.container div.row div#ill-doc-list1 ul a li div{
+    padding: 0px;
+    margin: 0px;
+}
+div.doc-dash div.container div.row div#ill-doc-list1 ul a:hover li {
+    background-color: #66b645;
+}
+div.doc-dash div.container div.row div#ill-doc-list1 ul a li img{
+    width: 80px;
+    height: 80px;
+    margin-top: 10px;
+    margin-left: 10px;
+}
+div.doc-dash div.container div.row div#ill-doc-list1 ul a li h6{
+    vertical-align: middle;
+    padding: 0px;
+    margin: 0px;
+    line-height: 60px;
+    clear: all;
+}
+div.doc-dash div.container div.row div#ill-doc-list1 ul a li p{
+    vertical-align: top;
+    padding: 0px;
+    margin: 0px;
+    line-height: 30px;
+}
+div.doc-dash div.container div.row div#ill-doc-list1 button{
+    background-color: #6bb34d;
+    ali
+
+}

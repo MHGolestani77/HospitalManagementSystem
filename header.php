@@ -12,23 +12,22 @@
 </head>
 <body>
 	<div id="header">
-		<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+		<nav class="navbar">
 		  	<a class="navbar-brand" href="#">
-				    <img src="assets/img/logo.png" width="40" height="40" class="" alt="">
-		  		بسیج دانشجویی</a>
-		  	<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-		    	<span class="navbar-toggler-icon"></span>
-		  	</button>
+				    <img src="assets/img/photo_2018-12-05_02-19-57.jpg" width="150" height="" class="" alt="">
+		  		سیستم مدیریت بیمارستان
+		  	</a>
 
-		  	<div class="collapse navbar-collapse" id="navbarSupportedContent">
+		  	<button class="btn left">تنظیمات <span class="glyphicon glyphicon-cog"></span></button>
+		  	<!-- <div class="collapse navbar-collapse" id="navbarSupportedContent">
 		    	<ul class="navbar-nav ml-auto rtl">
 		      		<li class="nav-item text-right active">
 		        		<a class="nav-link" href="#">صفحه نخست<span class="sr-only">(current)</span></a>
 		      		</li>
 
-		      		<!-- <li class="nav-item text-right">
+		      		<li class="nav-item text-right">
 		        		<a class="nav-link" href="#"></a>
-		      		</li> -->
+		      		</li>
 
 		      		<li class="nav-item dropdown">
 		        		<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -74,6 +73,6 @@
 		    		</div>
 		      		<img src="assets/img/memberId.jpg" alt="" class="my-2 my-sm-0">
 		    	</form>
-		  	</div>
+		  	</div> -->
 		</nav>
 	</div>
