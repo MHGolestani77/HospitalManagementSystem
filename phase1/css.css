@@ -127,6 +127,7 @@ div#main div.container {
     background: #fff;
     border-radius: 5px;
     box-shadow: 0 0 11px 0px #8c8c8c;
+    overflow: auto;
 }
 div#main div.container div.row {
 	
@@ -226,78 +227,45 @@ div#main div.container div.row div.main div.section div.row a button {
 
 }
 
-/*
-div.navbar{
 
-}
-div.navbar a{
 
+/*ill-list*/
+div#main div.container div.list {
+	background-color: #d8fffc;
+	border-radius: 5px;
+	padding: 35px 80px 20px;
+	margin-top: 10px;
+	margin-bottom: 30px;
+	overflow: auto;
 }
-div.navbar a img{
-	width: 120px;
-	height: 35px;
+div#main div.container div.list h4 {
+	color: #3bc0a8;
+	margin-bottom: 20px;
 }
-div.conainer{
-	background-color: #fff;
-}
-div.conainer div.row{
+div#main div.container div.list ul {
 	
 }
-div.conainer div.row div.doc-name{
-	background-color: #d1e2fe;
+div#main div.container div.list ul li{
+	background-color: #92dbd4;
+	border-radius: 5px;
+	margin-bottom: 10px;
+	line-height: 60px;
+	font-weight: 600;
 }
-div.conainer div.row img{
-	height: 150px;
-	width: 150px;
+div#main div.container div.list ul li:hover{
+	background-color: #78c5bf;
 }
-div.conainer div.row ul{
-	
+div#main div.container div.list ul li img {
+	width: 50px;
+	height: 50px;
+	margin: 10px;
 }
-div.conainer div.row ul li{
-	background-color: #e8f1ff;
-}
-div.conainer div.row ul li span.label-name{
-	text-align: right;
-}
-div.conainer div.row ul li span.label{
-	text-align: center;
-}
-div.conainer div.row div#doc-process{
-	background-color: #f34345;
-}
-div.conainer div.row div#doc-process ul{
-	
-}
-div.conainer div.row div#doc-process ul a{
-	
-}
-div.conainer div.row div#doc-process ul a li{
-	background-color: #fa6465;
-}
-div.conainer div.row div#doc-process ul a:hover li{
-	background-color: #c92f2f;
-}
-div.conainer div.row div#ill-doc-list1{
-	background-color: #a6fe83;
-}
-div.conainer div.row div#ill-doc-list1 ul {
+div#main div.container div.list ul li span.name {
 
 }
-div.conainer div.row div#ill-doc-list1 ul a {
+div#main div.container div.list ul li span.fa-name {
 
 }
-div.conainer div.row div#ill-doc-list1 ul a li {
-	background-color: #7fd45b;
-}
-div.conainer div.row div#ill-doc-list1 ul a:hover li {
-	background-color: #66b645;
-}
-div.conainer div.row div#ill-doc-list1 ul a li h6{
+div#main div.container div.list ul li span.ill-name {
 
 }
-div.conainer div.row div#ill-doc-list1 ul a li p{
-
-}
-div.conainer div.row div#ill-doc-list1 button{
-	background-color: #6bb34d;
-}*/
