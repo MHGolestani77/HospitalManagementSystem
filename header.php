@@ -14,7 +14,7 @@
 	<div id="header">
 		<nav class="navbar">
 		  	<a class="navbar-brand" href="#">
-				    <img src="assets/img/photo_2018-12-05_02-19-57.jpg" width="150" height="" class="" alt="">
+				    <img src="assets/img/logo.png" width="150" height="" class="" alt="">
 		  		سیستم مدیریت بیمارستان
 		  	</a>
 
