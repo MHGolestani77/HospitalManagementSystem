@@ -276,13 +276,14 @@ div#main div.container div.list ul li span.ill-name {
 
 
 
-/*personal-info*/
+/*personal-info &
+type user*/
 
 div.personal-info{
 	background-color: #d8fffc;
 	border-radius: 5px;
 	margin-bottom: 30px;
-
+	min-height: 550px;
 	overflow: auto;
 }
 div.personal-info ul.nav {
@@ -332,3 +333,39 @@ div.personal-info form input[type="submit"]{
 	background-color: #aeefe4;
 	margin-top: 20px;
 }
+div.personal-info form select{
+	margin: 20px auto;
+	border: 2px solid #aeefe4;
+	height: 45px;
+	color: #7db5b1;
+	padding-right: 50px;
+
+	text-align: center;
+	background-image:
+	    -webkit-linear-gradient(bottom left, transparent 50%, white 50%),
+	    -webkit-linear-gradient(top left, white 50%, transparent 50%),
+	    -webkit-linear-gradient(left, #aeefe4, #aeefe4);
+	background-image:
+	    -o-linear-gradient(bottom left, transparent 50%, white 50%),
+	    -o-linear-gradient(top left, white 50%, transparent 50%),
+	    -o-linear-gradient(left, #aeefe4, #aeefe4);
+	background-image:
+	    linear-gradient(to top right, transparent 50%, white 50%),
+	    linear-gradient(to bottom right, white 50%, transparent 50%),
+	    linear-gradient(to right, #aeefe4, #aeefe4);;
+	background-position:
+	    calc(100% - 20px) calc(1em + 2px),
+	    calc(100% - 15px) calc(1em + 2px),
+	    100% 0;
+	background-size:
+	    5px 5px,
+	    5px 5px,
+	    2.5em 2.5em;
+    background-repeat: no-repeat;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+}
+div.personal-info form select option{
+	text-align: center;
+}
+
