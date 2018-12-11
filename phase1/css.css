@@ -269,3 +269,63 @@ div#main div.container div.list ul li span.fa-name {
 div#main div.container div.list ul li span.ill-name {
 
 }
+
+
+
+
+/*personal-info*/
+
+div.personal-info{
+	background-color: #d8fffc;
+	border-radius: 5px;
+	margin-bottom: 30px;
+
+	overflow: auto;
+}
+div.personal-info ul.nav {
+	background-color: #92dbd4;
+	height: 60px;
+	line-height: 60px;
+	margin: 30px auto 30px;
+	border-radius: 5px;
+}
+div.personal-info ul.nav a{
+	
+}
+div.personal-info ul.nav a li{
+	color: #ffffff;
+
+}
+div.personal-info ul.nav a li.active{
+	color: #54b1a3;
+}
+div.personal-info ul.nav a li:hover{
+	color: #54b1a3;
+}
+div.personal-info h4{
+	color: #54b1a3;
+	margin: 0 auto;
+}
+div.personal-info form{
+	padding-bottom: 20px;
+}
+div.personal-info form div.row{
+	margin: 0px;
+}
+div.personal-info form input{
+	background-color: #ffffff;
+	color: #83aba7;
+	line-height: 45px;
+	margin: 5px auto 5px;
+	border: 2px solid #aeefe4;
+	border-radius: 10px;
+	text-align: center;
+}
+div.personal-info form input[type="text"]{
+	
+}
+div.personal-info form input[type="submit"]{
+	color: #fff;
+	background-color: #aeefe4;
+	margin-top: 20px;
+}
