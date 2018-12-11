@@ -45,3 +45,55 @@ var loginLogo = anime({
   },
   delay: 250 // All properties except 'scale' inherit 250ms delay
 });
+
+// var loginLogo = anime({
+//   targets: '#main .container .row .navbar',
+//   translateY: {
+//     value: [200, 0],
+//     duration: 400
+//   },
+//   opacity: {
+//     value: ['0', '1'],
+//     duration: 800,
+//     easing: 'easeInOutSine'
+//   },
+//   delay: 100 // All properties except 'scale' inherit 250ms delay
+// });
+
+var loginLogo = anime({
+  targets: '.main .section',
+  translateY: {
+    value: [50, 0],
+    duration: 400
+  },
+  opacity: {
+    value: 1,
+    duration: 800,
+    easing: 'easeInOutSine'
+  },
+  delay: function(el, i) { return i * 250 } // All properties except 'scale' inherit 250ms delay
+});
+
+var loginLogo = anime({
+  targets: '.main .section',
+  translateY: [50, 0],
+    duration: 800,
+    easing: 'easeInOutSine',
+  delay: function(el, i) { return i * 250 }, // All properties except 'scale' inherit 250ms delay
+});
+var loginLogo2 = anime({
+  targets: '.main .section',
+  opacity: 1,
+    duration: 800,
+    easing: 'easeInOutSine',
+  delay: function(el, i) { return i * 250 }, // All properties except 'scale' inherit 250ms delay
+});
+
+var loginLogo = anime({
+  targets: 'ul a li',
+  translateY: [50, 0],
+  opacity: [0, 1],
+    duration: 800,
+    easing: 'easeInOutSine',
+  delay: function(el, i) { return i * 250 }, // All properties except 'scale' inherit 250ms delay
+});
