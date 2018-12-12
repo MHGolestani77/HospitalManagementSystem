@@ -1,22 +1,24 @@
 <?php include "header.php" ?>
 
 <div class="personal-info">
-	<ul class="nav info-nav col-10">
-		<a href="#">
-			<li>افزودن کاربر</li>
-		</a>
-		<a href="#">
-			<li class="active">اطلاعات شناسایی</li>
-		</a>
-		<a href="#">
-			<li>تعیین نوع کاربر</li>
-		</a>
-		<a href="#">
-			<li>اتمام</li>
-		</a>
-	</ul>
+	<!-- <nav aria-label="breadcrumb">
+		<ul class="nav info-nav col-10 breadcrumb">
+			<a href="#">
+				<li class="breadcrumb-item">افزودن کاربر</li>
+			</a>
+			<a href="#">
+				<li class="breadcrumb-item active" aria-current="page">اطلاعات شناسایی</li>
+			</a>
+			<a href="#">
+				<li class="breadcrumb-item">تعیین نوع کاربر</li>
+			</a>
+			<a href="#">
+				<li class="breadcrumb-item">اتمام</li>
+			</a>
+		</ul>
+	</nav> -->
 	<nav aria-label="breadcrumb">
-	  	<ol class="breadcrumb">
+	  	<ol class="breadcrumb col-10">
 	    	<li class="breadcrumb-item"><a href="#">افزودن کاربر</a></li>
 	    	<li class="breadcrumb-item active" aria-current="page">اطلاعات شناسایی</li>
 	    	<li class="breadcrumb-item"><a href="#">تعیین نوع کاربر</a></li>

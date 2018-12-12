@@ -286,6 +286,30 @@ div.personal-info{
 	min-height: 550px;
 	overflow: auto;
 }
+div.personal-info nav{
+	
+}
+div.personal-info nav ol{
+	background-color: #92dbd4;
+	height: 60px;
+	line-height: 40px;
+	margin: 30px auto 30px;
+	border-radius: 5px;
+	overflow: inherit;
+}
+div.personal-info nav ol li{
+	
+}
+div.personal-info nav ol li a{
+	color: #ffffff;
+}
+div.personal-info nav ol li.active{
+	color: #54b1a3;
+}
+div.personal-info nav ol li a:hover{
+	color: #54b1a3;
+}
+/*
 div.personal-info ul.nav {
 	background-color: #92dbd4;
 	height: 60px;
@@ -306,6 +330,7 @@ div.personal-info ul.nav a li.active{
 div.personal-info ul.nav a li:hover{
 	color: #54b1a3;
 }
+*/
 div.personal-info h4{
 	color: #54b1a3;
 	margin: 0 auto;
