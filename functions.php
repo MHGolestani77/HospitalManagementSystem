@@ -8,6 +8,19 @@ function connection(){
     return $con;
 }
 
+//check char
+function check($str){
+	$cchar = "<>'';";
+	for($i=0;$i<strlen($str);$i++){
+		for($j=0;$j<strlen($cchar);$j++)
+			if ($str[$i] == $cchar[$j]){
+				$str[$i] = " ";
+				break;
+			}
+	}
+	return $str;
+}
+
 //users
 function addUser($name, $lastName, $fatherName, $sex, $nationalCode, $phoneNumber, $birthDate, $address, $userLevelId, $insuranceEndTime, $password){
 	$Insert = "INSERT INTO ".UserTable." (name, lastName, fatherName, sex, nationalCode, phoneNumber, birthDate, address, userLevelId, insuranceEndTime, password) 
@@ -23,6 +36,15 @@ function editUser($var, $value, $id){
 function deleteUser($id){
 	$Delete = "DELETE FROM ".UserTable." WHERE id = $id;";
 	mysqli_query(connection(), $Delete);
+}
+
+//create & check password
+function createPassWord($pw, $hash){
+	return hash("sha384", $T[0].$pw.$T[strlen($T)-1]);
+}
+
+function checkPassWord($us, $pw){
+	return 1;
 }
 
 //ills
