@@ -1,5 +1,4 @@
 <?php include "header.php"; ?>
- 			<div class="row">
  				<div class="main w-100">
  					<div class="col-md-4 section section1">
  						<div class="row">
@@ -111,5 +110,4 @@
  					</div>
  				</div>
  			</div>
- 		</div>
 <?php include "footer.php"; ?>

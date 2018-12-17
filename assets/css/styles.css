@@ -135,6 +135,7 @@ div#main div.container div.row {
 }
 div#main div.container div.row div.navbar {
 	width: 100%;
+	margin: 0 auto;
 }
 div#main div.container div.row div.navbar div.col-md-10 {
 	
@@ -282,10 +283,11 @@ div#main div.container div.list ul li span.ill-name {
 type user*/
 
 div.insert-user{
+	margin: 0 auto 30px;
 	background-color: #d8fffc;
-	border-radius: 5px;
+	border-radius: 5px;/*
 	margin-bottom: 30px;
-	min-height: 550px;
+	min-height: 550px;*/
 	overflow: hidden;
 }
 div.insert-user nav{
@@ -293,7 +295,6 @@ div.insert-user nav{
 }
 div.insert-user nav ol{
 	background-color: #92dbd4;
-	height: 60px;
 	line-height: 40px;
 	margin: 30px auto 30px;
 	border-radius: 5px;
@@ -302,11 +303,14 @@ div.insert-user nav ol{
 div.insert-user nav ol li{
 	
 }
-div.insert-user nav ol li a{
+div.insert-user nav ol .active{
+	color: #54b1a3;
+}
+div.insert-user nav ol li {
 	color: #ffffff;
 }
-div.insert-user nav ol li.active{
-	color: #54b1a3;
+div.insert-user nav ol li a {
+	color: #ffffff;
 }
 div.insert-user nav ol li a:hover{
 	color: #54b1a3;
@@ -346,24 +350,26 @@ div.insert-user form div.row{
 div.insert-user form input{
 	background-color: #ffffff;
 	color: #83aba7;
-	line-height: 45px;
-	margin: 5px auto 5px;
-	border: 2px solid #aeefe4;
-	border-radius: 10px;
-	text-align: center;
+    line-height: 35px;
+    margin: 5px auto;
+    border: 2px solid #aeefe4;
+    border-radius: 10px;
+    text-align: center;
+    outline: none;
 }
 div.insert-user form input[type="text"]{
 	
 }
 div.insert-user form input[type="submit"]{
-	color: #fff;
-	background-color: #aeefe4;
-	margin-top: 20px;
+    color: #389686;
+    background-color: #aeefe4;
+    line-height: 25px;/*
+	margin-top: 20px;*/
 }
 div.insert-user form select{
 	margin: 20px auto;
 	border: 2px solid #aeefe4;
-	height: 35px;
+	height: 40px;
 	color: #7db5b1;
 	padding-right: 50px;
 
