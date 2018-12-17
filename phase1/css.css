@@ -276,20 +276,20 @@ div#main div.container div.list ul li span.ill-name {
 
 
 
-/*personal-info &
+/*insert-user &
 type user*/
 
-div.personal-info{
+div.insert-user{
 	background-color: #d8fffc;
 	border-radius: 5px;
 	margin-bottom: 30px;
 	min-height: 550px;
 	overflow: hidden;
 }
-div.personal-info nav{
+div.insert-user nav{
 	
 }
-div.personal-info nav ol{
+div.insert-user nav ol{
 	background-color: #92dbd4;
 	height: 60px;
 	line-height: 40px;
@@ -297,68 +297,68 @@ div.personal-info nav ol{
 	border-radius: 5px;
 	overflow: inherit;
 }
-div.personal-info nav ol li{
+div.insert-user nav ol li{
 	
 }
-div.personal-info nav ol li a{
+div.insert-user nav ol li a{
 	color: #ffffff;
 }
-div.personal-info nav ol li.active{
+div.insert-user nav ol li.active{
 	color: #54b1a3;
 }
-div.personal-info nav ol li a:hover{
+div.insert-user nav ol li a:hover{
 	color: #54b1a3;
 }
 /*
-div.personal-info ul.nav {
+div.insert-user ul.nav {
 	background-color: #92dbd4;
 	height: 60px;
 	line-height: 60px;
 	margin: 30px auto 30px;
 	border-radius: 5px;
 }
-div.personal-info ul.nav a{
+div.insert-user ul.nav a{
 	
 }
-div.personal-info ul.nav a li{
+div.insert-user ul.nav a li{
 	color: #ffffff;
 
 }
-div.personal-info ul.nav a li.active{
+div.insert-user ul.nav a li.active{
 	color: #54b1a3;
 }
-div.personal-info ul.nav a li:hover{
+div.insert-user ul.nav a li:hover{
 	color: #54b1a3;
 }
 */
-div.personal-info h4{
+div.insert-user h4{
 	color: #54b1a3;
 	margin: 0 auto;
 }
-div.personal-info form{
+div.insert-user form{
 	padding-bottom: 20px;
 }
-div.personal-info form div.row{
+div.insert-user form div.row{
 	margin: 0px;
 }
-div.personal-info form input{
+div.insert-user form input{
 	background-color: #ffffff;
 	color: #83aba7;
-	line-height: 45px;
+	line-height: 35px;
 	margin: 5px auto 5px;
 	border: 2px solid #aeefe4;
 	border-radius: 10px;
 	text-align: center;
 }
-div.personal-info form input[type="text"]{
+div.insert-user form input[type="text"]{
 	
 }
-div.personal-info form input[type="submit"]{
+div.insert-user form input[type="submit"]{
 	color: #fff;
 	background-color: #aeefe4;
 	margin-top: 20px;
 }
-div.personal-info form select{
+div.insert-user form select{
 	margin: 20px auto;
 	border: 2px solid #aeefe4;
 	height: 45px;
@@ -390,23 +390,23 @@ div.personal-info form select{
     -webkit-appearance: none;
     -moz-appearance: none;
 }
-div.personal-info form select option{
+div.insert-user form select option{
 	text-align: center;
 }
 
 
 /*insurance_type*/
-div.personal-info div.row{
+div.insert-user div.row{
 	
 }
-div.personal-info div.row div.img{
+div.insert-user div.row div.img{
 	background-image: url();
 	background-repeat: no-repeat;
 	height: 206px;
 	width: 206px;
 	vertical-align: bottom;
 }
-div.personal-info div.row div.img div.personal_code{
+div.insert-user div.row div.img div.personal_code{
 	background-color: #00000088;
 	height: 50px;
 	line-height: 50px;
@@ -415,26 +415,26 @@ div.personal-info div.row div.img div.personal_code{
 	border-bottom-left-radius: 10px;
 	border-bottom-right-radius: 10px;
 }
-div.personal-info div.row div.col{
+div.insert-user div.row div.col{
 
 }
-div.personal-info div.row div.col-4{
+div.insert-user div.row div.col-4{
 	margin-top: 70px;
 	margin-bottom: 30px;
 }
-div.personal-info div.row div.col div.row{
+div.insert-user div.row div.col div.row{
 
 }
-div.personal-info div.row div.col div.row span{
+div.insert-user div.row div.col div.row span{
 
 }
-div.personal-info div.row div.col div.row span.label{
+div.insert-user div.row div.col div.row span.label{
 	color: #64c0b1;
 }
-div.personal-info div.label{
+div.insert-user div.label{
 	text-align: center;
 }
-div.personal-info div.label div{
+div.insert-user div.label div{
 	background-color: #fff;
 	border: 2px solid #aeefe4;
 	border-radius: 10px;
@@ -443,10 +443,10 @@ div.personal-info div.label div{
 	line-height: 45px;
 	text-align: center;
 }
-div.personal-info div.label div span{
+div.insert-user div.label div span{
 
 }
-div.personal-info div.label div span.label{
+div.insert-user div.label div span.label{
 	color: #5cafa0;
 }
 

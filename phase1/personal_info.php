@@ -1,6 +1,6 @@
 <?php include "header.php" ?>
 
-<div class="personal-info">
+<div class="insert-user">
 	<!-- <nav aria-label="breadcrumb">
 		<ul class="nav info-nav col-10 breadcrumb">
 			<a href="#">
