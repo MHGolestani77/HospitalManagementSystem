@@ -1,22 +1,6 @@
 <?php include "header.php" ?>
 
-<div class="insert-user">
-	<!-- <nav aria-label="breadcrumb">
-		<ul class="nav info-nav col-10 breadcrumb">
-			<a href="#">
-				<li class="breadcrumb-item">افزودن کاربر</li>
-			</a>
-			<a href="#">
-				<li class="breadcrumb-item active" aria-current="page">اطلاعات شناسایی</li>
-			</a>
-			<a href="#">
-				<li class="breadcrumb-item">تعیین نوع کاربر</li>
-			</a>
-			<a href="#">
-				<li class="breadcrumb-item">اتمام</li>
-			</a>
-		</ul>
-	</nav> -->
+<div class="inser-user">
 	<nav aria-label="breadcrumb">
 	  	<ol class="breadcrumb col-10">
 	    	<li class="breadcrumb-item"><a href="#">افزودن کاربر</a></li>

@@ -11,7 +11,7 @@
 	</nav>
 	<h4 class="col-10">#تعیین نوع کاربر</h4>
 	<form>
-		<select class="form-control col-5" data-toggle="dropdown" id="sel1">
+		<select class="form-control col-md-5" data-toggle="dropdown" id="sel1">
 			<option value="doctor">پزشک</option>
 			<option value="ill">بیمار</option>
 			<option value="manager">مدیر</option>
