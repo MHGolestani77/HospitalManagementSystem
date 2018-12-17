@@ -1,6 +1,6 @@
 <?php include "header.php" ?>
 
-<div class="personal-info">
+<div class="insert-user">
 	<div class="row">
 		<div class="col col-3 img">
 			<div class="personal_code">
