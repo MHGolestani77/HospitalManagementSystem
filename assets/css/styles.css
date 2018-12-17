@@ -83,7 +83,8 @@
     font-style: normal;
 }
 
-* {
+
+*{
 	font-family: IRANSans , IRANYekan;
 	direction: rtl;
     text-align: right;
@@ -92,39 +93,13 @@
 	transition: all 0.4s;
 }
 
-
-/*colors*/
-
-
-li {
-    list-style: none;
+a, a:hover{
+	text-decoration: none;
+	color: #000;
 }
 
-a {
-    color:#212529;
-}
-
-a:hover {
-    text-decoration: none;
-    color:#000000;
-}
-
-hr {
-    margin-top: 10px;
-}
-
-
-p , .h5 , .h6 {
-	line-height: 28px;
-}
-
-select {
-  -webkit-appearance: none;
-  -moz-appearance: none;
-}
-
-body {
-	background: #e9ecf3;
+li{
+	list-style: none;
 }
 
 html, body {
@@ -133,688 +108,353 @@ html, body {
     margin: 0;
     padding: 0;
 }
-div#main{
-    height: 91%;
-    min-height: 91%;
+
+body{
+	background-color: #dadada;
 }
 
-body.login {
-    background: linear-gradient(#343a40,#7c7d7d00) no-repeat, url(../img/back.jpg) fixed center center no-repeat;
-    background-size: cover;
+@media (min-width: 768px){
+	.col-md-4.section {
+    	width: 31%;
+    	margin: 10px 1%;
+	}
 }
-
-input , button {
-    outline: hidden;
-}
-
-.row {
-    margin-right: 0;
-    margin-left: 0;
-}
-
-/* Header */
-div#header {
-
-}
-
-div#header div.logo {
-    text-align: center;
-    /*background: linear-gradient(#343a40,#7c7d7d00) no-repeat, url(../img/1.jpg) fixed center center no-repeat;
-    background-size: cover;*/
-}
-
-div#header div.logo img {
-    display: inline-block;
-}
-
-div#header nav form img {
-	width: 40px;
-	height: 40px;
-	margin-left: 10px;
-	border-radius: 100%;
-	cursor: pointer;
-}
-
-div#header nav form div a {
-	color: #fff;
-}
-
-div#header nav form div div a {
-	color: #343a40;
-}
-
-/* Login */
-div.login{
-    background-color: white;
-    padding: 20px;
-}
-div.login *{
-    text-align: center;
-    margin-top: 10px;
-    margin-bottom: 10px;
-}
-div#login {
-    
-}
-div#login div.row {
-
-}
-div#login div.row div {
-    text-align: center;
-}
-div#login div.row div p {
-    font-weight: 600;
-    font-size: 20px;
-    color: #fff;
-    text-align: center;
-    text-shadow: #000 0px 0 20px;
-    opacity: 0;
-}
-div#login div.row div img {
-    opacity: 0;
-}
-div#login div.row div div.login {
-    opacity: 0;
-    padding: 10px 20px;
-    display: inline-block;
-}
-
-/* Main */
 div#main {
-    padding: 10px;
-    background: linear-gradient(#343a40,#7c7d7d00) no-repeat, url(../img/back.jpg) fixed center center no-repeat;
-    background-size: cover;
-    margin-bottom: 0;
-}
-div#main div.logo {
-    text-align: center;
-}
-div#main div.logo img {
-    display: inline-block;
+	padding: 20px;
 }
 div#main div.container {
-    border-radius: 10px;
+/*	margin: 20px auto;*/
     background: #fff;
-    padding: 10px;
-    height: 100%;
-    min-height: 100%;
-    overflow-y: scroll;
-    overflow-x: hidden;
-    /*opacity: 0;*/
+    border-radius: 5px;
+    box-shadow: 0 0 11px 0px #8c8c8c;
+    /*overflow: auto;*/
+    padding: 10px 20px;
 }
-div#main div.container div.selectForm {
-    padding: 10px;
+div#main div.container div.row {
+	
 }
-div#main div.container div.selectForm i {
-    color: #319f8f;
+div#main div.container div.row div.navbar {
+	width: 100%;
 }
-div#main div.container div.selectForm p {
-    margin: 20px;
+div#main div.container div.row div.navbar div.col-md-10 {
+	
 }
-div#main div.container div.selectForm p.h4 {
-    color: #319f8f;
+div#main div.container div.row div.navbar div.col-md-10 img {
+	width: 100px;
+	display: inline-block;
 }
-div#main div.container div.selectForm form {
-    margin: 0 auto;
-    text-align: center;
+div#main div.container div.row div.navbar div.col-md-10 p {
+	display: inline-block;
 }
-div#main div.container div.selectForm form div.row {
-    padding: 5px 0;
+div#main div.container div.row div.navbar div.col-md-2 {
+	
 }
-div#main div.container div.selectForm form div.row label {
-    text-align: center;
-    line-height: 34px;
+div#main div.container div.row div.navbar div.col-md-2 a {
+	
 }
-div#main div.container div.selectForm form div.row i {
-    text-align: center;
-    line-height: 34px;
+div#main div.container div.row div.navbar div.col-md-2 a button {
+	width: 100%;
 }
-div#main div.container div.selectForm form div.row select {
-    padding-right: 50px;
-    border: 1px solid #5bada1;
-  background-image:
-    -webkit-linear-gradient(bottom left, transparent 50%, white 50%),
-    -webkit-linear-gradient(top left, white 50%, transparent 50%),
-    -webkit-linear-gradient(left, #5bada1, #5bada1);
-  background-image:
-    -o-linear-gradient(bottom left, transparent 50%, white 50%),
-    -o-linear-gradient(top left, white 50%, transparent 50%),
-    -o-linear-gradient(left, #5bada1, #5bada1);
-  background-image:
-    linear-gradient(to top right, transparent 50%, white 50%),
-    linear-gradient(to bottom right, white 50%, transparent 50%),
-    linear-gradient(to right, #5bada1, #5bada1);;
-  background-position:
-    calc(100% - 20px) calc(1em + 2px),
-    calc(100% - 15px) calc(1em + 2px),
-    100% 0;
-  background-size:
-    5px 5px,
-    5px 5px,
-    2.5em 2.5em;
-  background-repeat: no-repeat;
-    background-color: aliceblue;
-    color: #25786c; 
-    line-height: 40px;
+div#main div.container div.row div.main {
+	
 }
-div#main div.container div.selectForm form div.row select option {
-      
+div#main div.container div.row div.main div.section {
+	opacity: 0;
+	float: right;
+	border-radius: 5px;
+	min-height: 97%;
 }
-div#main div.container div.selectForm form div.row input {
-    border: 1px solid #5bada1;
-    background-color: aliceblue;
-    color: #25786c;
-    text-align: center;
+div#main div.container div.row div.main div.section.section1 {
+	background: #d0e2ff;
 }
-div#main div.container div.selectForm form div.row textarea {
-    border: 1px solid #5bada1;
-    background-color: aliceblue;
-    color: #25786c;
-    text-align: center;
+div#main div.container div.row div.main div.section.section2 {
+	background: #f34444;
 }
-div#main div.container div.selectForm form div.row input[type="text"] {
-    line-height: 40px;
+div#main div.container div.row div.main div.section.section3 {
+	background: #a6fe82;
 }
-div#main div.container div.selectForm form div.row input[type="password"] {
-    line-height: 40px;
+div#main div.container div.row div.main div.section div.row {
+	padding: 10px;
 }
-div#main div.container div.selectForm form div.row input[type="submit"] {
-    background: #5bada1;
-    color: #fff;
+div#main div.container div.row div.main div.section div.row p {
+	font-weight: bold;
+}
+div#main div.container div.row div.main div.section div.row div {
     margin: 0 auto;
 }
-div#main div.container div.listForm {
-    padding: 10px;
-    overflow-x: scroll;
-}
-div#main div.container div.listForm p {
-    margin: 20px;
-}
-div#main div.container div.listForm p.h4 {
-
-}
-div#main div.container div.listForm table {
-    margin: 0 auto 30px;
-}
-div#main div.container div.listForm table tr:first-child {
-    background: #5bada1;
-    color: #ffffff;
-}
-div#main div.container div.listForm table tr {
-    background: aliceblue;
-    color: #378277;
-    cursor: pointer;
-}
-div#main div.container div.listForm table tr.disabled {
-    /*color: #ff0000;*/
-}
-div#main div.container div.listForm table tr th {
-    text-align: center;
-}
-div#main div.container div.listForm table tr td {
-    text-align: center;
-}
-div#main div.container div.listForm table tr:oddchiled {
-
-}
-
-/*login*/
-div#login {
-    margin-bottom: 20px;
-    padding-top: 20px;
-    padding-bottom: 20px;
-}
-
-div#login div.row {
-    text-align: center;
-}
-
-div#login div.row div {
-    margin: 0 auto;
-}
-
-/*dashBoard*/
-
-div#main div.container div.row ul {
-    padding: 10px;
+div#main div.container div.row div.main div.section div.row img {
+	width: 100%;
+	height: 100%;
     border-radius: 5px;
 }
-div#main div.container div.row div.message {
-    padding-bottom: 15px;
-}
-div#main div.container div.row div.message div.row {
-
-}
-div#main div.container div.row div.message div.row h4 {
-
-}
-div#main div.container div.row div.message div.row p {
-    margin: 0;
-}
-div#main div.container div.row div.message div.row button {
-    
-}
-div#main div.container div.row div.talks{
-    
-}
-div#main div.container div.row div.talks h4{
-
-}
-div#main div.container div.row div.talks p{
-
-}
-div#main div.container div.row div.talks button{
-    
-}
-div#main div.container div.row div.activations{
-    padding-bottom: 15px;
-}
-div#main div.container div.row div.activations h4{
-
-}
-div#main div.container div.row div.activations p{
-
-}
-div#main div.container div.row div.activations button{
-    
-}
-div#main div.container div.row div.bases{
-    padding-bottom: 15px;
-}
-div#main div.container div.row div.bases h4{
-    color: #9863B4;
-}
-div#main div.container div.row div.bases p{
-
-}
-div#main div.container div.row div.bases button{
-    background-color: #9863B4;
-    color: #fff;
-}
-div#main div.container div.row div.bases button:hover{
-    background-color: #8859A0;
-    color: #fff;
-}
-
-
-/*Account*/
-
-div#main div#account {
-
-}
-div#main div#account div.container {
-
-}
-div#main div#account div.container div.row {
-
-}
-div#main div#account div.container div.row div {
-
-}
-div#main div#account div.container div.row div ul {
-    padding: 15px 0;
-}
-div#main div#account div.container div.row div ul li {
-    text-align: center;
-    list-style: none;
-    padding: 10px 0;
-}
-div#main div#account div.container div.row div ul li a {
-    color: #000;
-    text-decoration: none;
-}
-div#main div#account div.container div.row div ul li a i {
-    color: #319f8f;
-    font-size: 25px;
-    padding: 10px;
-}
-div#main div#account div.container div.row div ul li a p {
-    text-align: center;
-}
-div#account div.container div.row div div.selectForm.account div {
-    height: auto;
-    overflow: unset;
-}
-
-
-/*insert.php*/
-div#main div#insert {
-
-}
-div#main div#insert div#right ul {
-    
-}
-div#main div#insert div#right ul li {
-    margin: 20px;
-    border-radius: 5px;
-    height: 100px;
-}
-div#main div#insert div#right ul.insert a:nth-child(1) li {
-    background-color: #39acff;
-    color: #0b5ba1;
-}
-div#main div#insert div#right ul.insert a:nth-child(2) li {
-    background-color: #f9b294;
-    color: #c75243;
-}
-div#main div#insert div#right ul.insert a:nth-child(3) li {
-    background-color: #a5f24a;
-    color: #186d24;
-}
-div#main div#insert div#right ul li p {
-    text-align: center;
-    line-height: 100px;
-}
-div#main div#insert div {
-
-}
-div#main div#insert div form {
-
-}
-div#main div#insert div form div {
-
-}
-div#main div#insert div form div label {
-
-}
-div#main div#insert div form div input {
-    text-align: center;
-}
-div#main div#insert div form div input[type="text"] {
-
-}
-div#main div#insert div form div input[type="submit"] {
-
-}
-div#main div#insert div form div textarea {
-
-}
-div#main div#insert div#add-doctor {
-
-}
-div#main div#insert div#add-doctor form {
-
-}
-div#main div#insert div#add-doctor form div {
-
-}
-div#main div#insert div#add-doctor form div label {
-    color: #0b5ba1;
-}
-div#main div#insert div#add-doctor form div input {
-    background-color: #39acffae;
-    color: #0b5ba1;
-}
-div#main div#insert div#add-doctor form div input[type="text"] {
-
-}
-div#main div#insert div#add-doctor form div input[type="submit"] {
-
-}
-div#main div#insert div#add-doctor form div textarea {
-    background-color: #39acffae;
-    color: #0b5ba1;
-}
-div#main div#insert div#add-clerk {
-
-}
-div#main div#insert div#add-clerk form {
-
-}
-div#main div#insert div#add-clerk form div {
-
-}
-div#main div#insert div#add-clerk form div label {
-    color: #c75243;
-}
-div#main div#insert div#add-clerk form div input {
-    background-color: #f9b294;
-    color: #c75243;
-}
-div#main div#insert div#add-clerk form div input[type="text"] {
-
-}
-div#main div#insert div#add-clerk form div input[type="submit"] {
-
-}
-div#main div#insert div#add-clerk form div textarea {
-    background-color: #f9b294;
-    color: #c75243;
-}
-div#main div#insert div#add-ill {
-
-}
-div#main div#insert div#add-ill form {
-
-}
-div#main div#insert div#add-ill form div {
-
-}
-div#main div#insert div#add-ill form div label {
-    color: #186d24;
-}
-div#main div#insert div#add-ill form div input {
-    background-color: #a5f24a;
-    color: #186d24;
-}
-div#main div#insert div#add-ill form div input[type="text"] {
-
-}
-div#main div#insert div#add-ill form div input[type="submit"] {
-
-}
-div#main div#insert div#add-ill form div textarea {
-    background-color: #a5f24a;
-    color: #186d24;
-}
-
-
-/*Setting.php*/
-div#account div.container div.row div div.selectForm div {
-    height: 450px;
-    overflow-y: scroll;
-}
-div#account div.container div.row div div.selectForm div table tr th,
-div#account div.container div.row div div.selectForm div table tr td  {
-    text-align: center;
-}
-
-/*Footer*/
-div#footer {
-    margin-top: -8px;
+div#main div.container div.row div.main div.section div.row ul {
+	width: 85%;
+    margin: 0 auto;
+    padding: 0;
+}
+div#main div.container div.row div.main div.section div.row ul a {
+	overflow: hidden;
+}
+div#main div.container div.row div.main div.section div.row ul a li {
+	line-height: 35px;
+	background: #ffffff85;
+	margin: 5px;
+	padding: 0 5px;
+	border-radius: 5px;
 	text-align: center;
-    height: 50px;
 }
-div#footer p {
-	line-height: 50px;
+div#main div.container div.row div.main div.section.section1 div.row ul a li:hover{
+	background: #8fcff5;
+}
+div#main div.container div.row div.main div.section.section2 div.row ul a li:hover{
+	background: #d41919;
+}
+div#main div.container div.row div.main div.section.section3 div.row ul a li:hover{
+	background: #6bd241;
+}
+div#main div.container div.row div.main div.section div.row ul.text-right a li {
+	text-align: right;
+}
+div#main div.container div.row div.main div.section div.row ul a li small {
+	
+}
+div#main div.container div.row div.main div.section div.row ul a li small.label {
+	width: 100px;
+	display: inline-block;
+}
+div#main div.container div.row div.main div.section div.row ul a li i {
+
+}
+div#main div.container div.row div.main div.section div.row ul a li span {
+
+}
+div#main div.container div.row div.main div.section div.row a button {
+
+}
+
+
+
+/*ill-list*/
+div#main div.container div.list {
+	background-color: #d8fffc;
+	border-radius: 5px;
+	padding: 35px 80px 20px;
+	margin-top: 10px;
+	margin-bottom: 30px;
+	overflow: auto;
+}
+div#main div.container div.list h4 {
+	color: #3bc0a8;
+	margin-bottom: 20px;
+}
+div#main div.container div.list ul {
+	
+}
+div#main div.container div.list ul li{
+	background-color: #92dbd4;
+	border-radius: 5px;
+	margin-bottom: 10px;
+	line-height: 60px;
+	font-weight: 600;
+}
+div#main div.container div.list ul li:hover{
+	background-color: #78c5bf;
+}
+div#main div.container div.list ul li img {
+	width: 50px;
+	height: 50px;
+	margin: 10px;
+}
+div#main div.container div.list ul li span.name {
+
+}
+div#main div.container div.list ul li span.fa-name {
+
+}
+div#main div.container div.list ul li span.ill-name {
+
+}
+
+
+
+
+/*insert-user &
+type user*/
+
+div.insert-user{
+	background-color: #d8fffc;
+	border-radius: 5px;
+	margin-bottom: 30px;
+	min-height: 550px;
+	overflow: hidden;
+}
+div.insert-user nav{
+	
+}
+div.insert-user nav ol{
+	background-color: #92dbd4;
+	height: 60px;
+	line-height: 40px;
+	margin: 30px auto 30px;
+	border-radius: 5px;
+	overflow: inherit;
+}
+div.insert-user nav ol li{
+	
+}
+div.insert-user nav ol li a{
+	color: #ffffff;
+}
+div.insert-user nav ol li.active{
+	color: #54b1a3;
+}
+div.insert-user nav ol li a:hover{
+	color: #54b1a3;
+}
+/*
+div.insert-user ul.nav {
+	background-color: #92dbd4;
+	height: 60px;
+	line-height: 60px;
+	margin: 30px auto 30px;
+	border-radius: 5px;
+}
+div.insert-user ul.nav a{
+	
+}
+div.insert-user ul.nav a li{
+	color: #ffffff;
+
+}
+div.insert-user ul.nav a li.active{
+	color: #54b1a3;
+}
+div.insert-user ul.nav a li:hover{
+	color: #54b1a3;
+}
+*/
+div.insert-user h4{
+	color: #54b1a3;
+	margin: 0 auto;
+}
+div.insert-user form{
+	padding-bottom: 20px;
+}
+div.insert-user form div.row{
+	margin: 0px;
+}
+div.insert-user form input{
+	background-color: #ffffff;
+	color: #83aba7;
+	line-height: 45px;
+	margin: 5px auto 5px;
+	border: 2px solid #aeefe4;
+	border-radius: 10px;
+	text-align: center;
+}
+div.insert-user form input[type="text"]{
+	
+}
+div.insert-user form input[type="submit"]{
 	color: #fff;
-	text-shadow: 0px 0px 10px #000;
+	background-color: #aeefe4;
+	margin-top: 20px;
 }
+div.insert-user form select{
+	margin: 20px auto;
+	border: 2px solid #aeefe4;
+	height: 35px;
+	color: #7db5b1;
+	padding-right: 50px;
 
-/*Bootstrap*/
-/*.btn-primary {
-    color: #fff;
-    background-color: #009688;
-    border-color: #009688;
+	text-align: center;
+	background-image:
+	    -webkit-linear-gradient(bottom left, transparent 50%, white 50%),
+	    -webkit-linear-gradient(top left, white 50%, transparent 50%),
+	    -webkit-linear-gradient(left, #aeefe4, #aeefe4);
+	background-image:
+	    -o-linear-gradient(bottom left, transparent 50%, white 50%),
+	    -o-linear-gradient(top left, white 50%, transparent 50%),
+	    -o-linear-gradient(left, #aeefe4, #aeefe4);
+	background-image:
+	    linear-gradient(to top right, transparent 50%, white 50%),
+	    linear-gradient(to bottom right, white 50%, transparent 50%),
+	    linear-gradient(to right, #aeefe4, #aeefe4);;
+	background-position:
+	    calc(100% - 20px) calc(1em + 2px),
+	    calc(100% - 15px) calc(1em + 2px),
+	    100% 0;
+	background-size:
+	    5px 5px,
+	    5px 5px,
+	    2.5em 2.5em;
+    background-repeat: no-repeat;
+    -webkit-appearance: none;
+    -moz-appearance: none;
 }
-
-.btn-primary:hover {
-    background-color: #06867a;
-    border-color: #06867a;
-}*/
-
-
-.nav-item {
-    text-shadow: 0px 0px 10px #000;
-}
-
-div.dropdown-menu a {
-    text-shadow: none;
-}
-
-.dropdown-menu {
-    text-align: right;
-}
-
-.navbar-dark .navbar-nav .nav-link {
-    color: rgb(179, 179, 179);
-}
-
-.navbar-dark .navbar-nav .nav-link:focus, .navbar-dark .navbar-nav .nav-link:hover {
-    color: rgba(255, 255, 255, 1);
-}
-
-.dropdown-toggle::before {
-    display: inline-block;
-    width: 0;
-    height: 0;
-    margin-left: .255em;
-    vertical-align: .255em;
-    content: "";
-    border-top: .3em solid;
-    border-right: .3em solid transparent;
-    border-bottom: 0;
-    border-left: .3em solid transparent;
-}
-
-.dropdown-toggle::after {
-    display: inline-block;
-    width: 0;
-    height: 0;
-    margin-left: .255em;
-    vertical-align: .255em;
-    content: "";
-    border: none;
-}
-
-/*scroll*/
-
-/* width */
-::-webkit-scrollbar {
-    width: 10px;
-}
-
-/* Track */
-::-webkit-scrollbar-track {
-    background: #f1f1f1; 
-}
-
-/* Handle */
-::-webkit-scrollbar-thumb {
-    background: #888; 
-}
-
-/* Handle on hover */
-::-webkit-scrollbar-thumb:hover {
-    background: #555; 
+div.insert-user form select option{
+	text-align: center;
 }
 
 
-
-
-/*doc dashboard*/
-div.doc-dash div.container{
-    background-color: #fff;
-    padding: 15px;
-    border-radius: 5px;
+/*insurance_type*/
+div.insert-user div.row{
+	
 }
-
-div.doc-dash div.container div.row{
-
+div.insert-user div.row div.img{
+	background-image: url();
+	background-repeat: no-repeat;
+	height: 206px;
+	width: 206px;
+	vertical-align: bottom;
 }
-div.doc-dash div.container div.row div{
-    margin: 40px 8px 30px;
-    border-radius: 5px;
-    padding-bottom: 30px;
+div.insert-user div.row div.img div.personal_code{
+	background-color: #00000088;
+	height: 50px;
+	line-height: 50px;
+	text-align: center;
+	color: #caeee7;
+	border-bottom-left-radius: 10px;
+	border-bottom-right-radius: 10px;
 }
-div.doc-dash div.container div.row div#doc-name{
-    background-color: #d1e2fe;
-    padding: 20px;
-
-}
-div.doc-dash div.container div.row img{
-    height: 150px;
-    width: 150px;
-}
-div.doc-dash div.container div.row ul{
-    padding: 0px;
-}
-div.doc-dash div.container div.row ul li{
-    background-color: #e8f1ff;
-    margin-top: 10px;
-    padding-right: 25px;
-    border-radius: 5px;
-    text-align: right;
-    vertical-align: middle;
-    line-height: 50px;
-}
-div.doc-dash div.container div.row ul li span.label-name{
-    text-align: right;
-}
-div.doc-dash div.container div.row ul li span.label{
+div.insert-user div.row div.col{
 
 }
-div.doc-dash div.container div.row div#doc-process{
-    background-color: #f34345;
-    padding-top: 60px;
+div.insert-user div.row div.col-4{
+	margin-top: 70px;
+	margin-bottom: 30px;
 }
-div.doc-dash div.container div.row div#doc-process ul{
-    
-}
-div.doc-dash div.container div.row div#doc-process ul a{
-    
-}
-div.doc-dash div.container div.row div#doc-process ul a li{
-    background-color: #fa6465;
-}
-div.doc-dash div.container div.row div#doc-process ul a:hover li{
-    background-color: #c92f2f;
-}
-div.doc-dash div.container div.row div#ill-doc-list1{
-    background-color: #a6fe83;
-    text-align: left;
-    padding-top: 60px;
-}
-div.doc-dash div.container div.row div#ill-doc-list1 ul {
+div.insert-user div.row div.col div.row{
 
 }
-div.doc-dash div.container div.row div#ill-doc-list1 ul a {
+div.insert-user div.row div.col div.row span{
 
 }
-div.doc-dash div.container div.row div#ill-doc-list1 ul a li {
-    background-color: #7fd45b;
-    height: 100px;
-    vertical-align: middle;
-    padding-right: 0px;
+div.insert-user div.row div.col div.row span.label{
+	color: #64c0b1;
 }
-div.doc-dash div.container div.row div#ill-doc-list1 ul a li div{
-    padding: 0px;
-    margin: 0px;
+div.insert-user div.label{
+	text-align: center;
 }
-div.doc-dash div.container div.row div#ill-doc-list1 ul a:hover li {
-    background-color: #66b645;
+div.insert-user div.label div{
+	background-color: #fff;
+	border: 2px solid #aeefe4;
+	border-radius: 10px;
+	height: 45px;
+	margin: 5px auto;
+	line-height: 45px;
+	text-align: center;
 }
-div.doc-dash div.container div.row div#ill-doc-list1 ul a li img{
-    width: 80px;
-    height: 80px;
-    margin-top: 10px;
-    margin-left: 10px;
-}
-div.doc-dash div.container div.row div#ill-doc-list1 ul a li h6{
-    vertical-align: middle;
-    padding: 0px;
-    margin: 0px;
-    line-height: 60px;
-    clear: all;
-}
-div.doc-dash div.container div.row div#ill-doc-list1 ul a li p{
-    vertical-align: top;
-    padding: 0px;
-    margin: 0px;
-    line-height: 30px;
-}
-div.doc-dash div.container div.row div#ill-doc-list1 button{
-    background-color: #6bb34d;
-    ali
+div.insert-user div.label div span{
 
+}
+div.insert-user div.label div span.label{
+	color: #5cafa0;
+}
+
+
+/*bootstrap*/
+
+.breadcrumb-item+.breadcrumb-item::before{
+	padding: 0 1rem;
 }
