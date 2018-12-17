@@ -1,6 +1,6 @@
 <?php include "header.php" ?>
 
-<div class="personal-info">
+<div class="insert-user">
 	<nav aria-label="breadcrumb">
 	  	<ol class="breadcrumb col-10">
 	    	<li class="breadcrumb-item"><a href="#">افزودن کاربر</a></li>
