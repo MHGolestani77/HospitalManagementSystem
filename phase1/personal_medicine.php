@@ -1,13 +1,14 @@
 <?php include "header.php" ?>
 
-<div class="insert-user">
+<div class="container insert-user">
 	<div class="row">
-		<div class="col col-3 img">
+		<div class="col col-md-3 img">
+			<img src="../assets/img/back.jpg">
 			<div class="personal_code">
 				10101010
 			</div>
 		</div>
-		<div class="col col-4">
+		<div class="col col-md-4">
 			<div class="row">
 				<span class="label">
 					نام:
@@ -41,7 +42,7 @@
 				</span>
 			</div>
 		</div>
-		<div class="col col-4">
+		<div class="col col-md-4">
 			<div class="row">
 				<span class="label">
 					جنسیت:
@@ -52,7 +53,7 @@
 			</div>
 			<div class="row">
 				<span class="label">
-					شماره تماسس:
+					شماره تماس:
 				</span>
 				<span>
 					09100000000
@@ -77,30 +78,40 @@
 		</div>
 	</div>
 	<nav aria-label="breadcrumb" class="nav-process">
-		  	<ol class="breadcrumb col-10">
+		  	<ol class="breadcrumb col-md-10">
 		    	<li class="breadcrumb-item"><a href="#">افزودن کاربر</a></li>
 		    	<li class="breadcrumb-item active" aria-current="page">اطلاعات شناسایی</li>
 		    	<li class="breadcrumb-item"><a href="#">تعیین نوع کاربر</a></li>
 		    	<li class="breadcrumb-item"><a href="#">اتمام</a></li>
 		  	</ol>
 	</nav>
-	<h4 class="col-10">#اطلاعات بیمه</h4>
+	<h4 class="col-md-10">#داروها</h4>
 	<div class="items">
-		<div class="col-5 item">
-			<span class="label item">
-				عنوان بیمه:
-			</span>
-			<span>
-				بیمه فرهنگیان
-			</span>
+		<div class="col-md-5 item medicine">
+			<a href="#">
+				<div class="row">
+					<div class="col col-md-1 num">1</div>
+					<div class="col col-md-10 ">
+						<span class="label">
+							<h5>عنوان دارو (مدت زمان مصرف)</h5>
+							توضیحات دارو
+						</span>
+					</div>
+				</div>
+			</a>
 		</div>
-		<div class="col-5 item">
-			<span class="label item">
-				تاریخ پایان اعتبار:
-			</span>
-			<span>
-				1398/00/00
-			</span>
+		<div class="col-5 item medicine">
+			<a href="#">
+				<div class="row">
+					<div class="col col-1 num">2</div>
+					<div class="col col-md-10 text-center w-100">
+						<span class="label">
+							<h5>عنوان دارو (مدت زمان مصرف)</h5>
+							<span>توضیحات دارو</span>
+						</span>
+					</div>
+				</div>
+			</a>
 		</div>
 	</div>
 

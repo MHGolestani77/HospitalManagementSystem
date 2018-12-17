@@ -10,7 +10,7 @@
  </head>
  <body>
  	<div id="main">
- 		<div class="container">
+ 		<div class="main">
  			<div class="row">
  				<div class="navbar">
  					<div class="col-md-10">

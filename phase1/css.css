@@ -122,7 +122,7 @@ body{
 div#main {
 	padding: 20px;
 }
-div#main div.container {
+div#main div.main {
 /*	margin: 20px auto;*/
     background: #fff;
     border-radius: 5px;
@@ -130,70 +130,70 @@ div#main div.container {
     /*overflow: auto;*/
     padding: 10px 20px;
 }
-div#main div.container div.row {
+div#main div.main div.row {
 	
 }
-div#main div.container div.row div.navbar {
+div#main div.main div.row div.navbar {
 	width: 100%;
 }
-div#main div.container div.row div.navbar div.col-md-10 {
+div#main div.main div.row div.navbar div.col-md-10 {
 	
 }
-div#main div.container div.row div.navbar div.col-md-10 img {
+div#main div.main div.row div.navbar div.col-md-10 img {
 	width: 100px;
 	display: inline-block;
 }
-div#main div.container div.row div.navbar div.col-md-10 p {
+div#main div.main div.row div.navbar div.col-md-10 p {
 	display: inline-block;
 }
-div#main div.container div.row div.navbar div.col-md-2 {
+div#main div.main div.row div.navbar div.col-md-2 {
 	
 }
-div#main div.container div.row div.navbar div.col-md-2 a {
+div#main div.main div.row div.navbar div.col-md-2 a {
 	
 }
-div#main div.container div.row div.navbar div.col-md-2 a button {
+div#main div.main div.row div.navbar div.col-md-2 a button {
 	width: 100%;
 }
-div#main div.container div.row div.main {
+div#main div.main div.row div.main {
 	
 }
-div#main div.container div.row div.main div.section {
+div#main div.main div.row div.main div.section {
 	opacity: 0;
 	float: right;
 	border-radius: 5px;
 	min-height: 97%;
 }
-div#main div.container div.row div.main div.section.section1 {
+div#main div.main div.row div.main div.section.section1 {
 	background: #d0e2ff;
 }
-div#main div.container div.row div.main div.section.section2 {
+div#main div.main div.row div.main div.section.section2 {
 	background: #f34444;
 }
-div#main div.container div.row div.main div.section.section3 {
+div#main div.main div.row div.main div.section.section3 {
 	background: #a6fe82;
 }
-div#main div.container div.row div.main div.section div.row {
+div#main div.main div.row div.main div.section div.row {
 	padding: 10px;
 }
-div#main div.container div.row div.main div.section div.row p {
+div#main div.main div.row div.main div.section div.row p {
 	font-weight: bold;
 }
-div#main div.container div.row div.main div.section div.row img {
+div#main div.main div.row div.main div.section div.row img {
 	width: 100px;
     height: 100px;
     margin: 0 auto;
     border-radius: 5px;
 }
-div#main div.container div.row div.main div.section div.row ul {
+div#main div.main div.row div.main div.section div.row ul {
 	width: 85%;
     margin: 0 auto;
     padding: 0;
 }
-div#main div.container div.row div.main div.section div.row ul a {
+div#main div.main div.row div.main div.section div.row ul a {
 	overflow: hidden;
 }
-div#main div.container div.row div.main div.section div.row ul a li {
+div#main div.main div.row div.main div.section div.row ul a li {
 	line-height: 35px;
 	background: #ffffff85;
 	margin: 5px;
@@ -201,39 +201,39 @@ div#main div.container div.row div.main div.section div.row ul a li {
 	border-radius: 5px;
 	text-align: center;
 }
-div#main div.container div.row div.main div.section.section1 div.row ul a li:hover{
+div#main div.main div.row div.main div.section.section1 div.row ul a li:hover{
 	background: #8fcff5;
 }
-div#main div.container div.row div.main div.section.section2 div.row ul a li:hover{
+div#main div.main div.row div.main div.section.section2 div.row ul a li:hover{
 	background: #d41919;
 }
-div#main div.container div.row div.main div.section.section3 div.row ul a li:hover{
+div#main div.main div.row div.main div.section.section3 div.row ul a li:hover{
 	background: #6bd241;
 }
-div#main div.container div.row div.main div.section div.row ul.text-right a li {
+div#main div.main div.row div.main div.section div.row ul.text-right a li {
 	text-align: right;
 }
-div#main div.container div.row div.main div.section div.row ul a li small {
+div#main div.main div.row div.main div.section div.row ul a li small {
 	
 }
-div#main div.container div.row div.main div.section div.row ul a li small.label {
+div#main div.main div.row div.main div.section div.row ul a li small.label {
 	width: 100px;
 	display: inline-block;
 }
-div#main div.container div.row div.main div.section div.row ul a li i {
+div#main div.main div.row div.main div.section div.row ul a li i {
 
 }
-div#main div.container div.row div.main div.section div.row ul a li span {
+div#main div.main div.row div.main div.section div.row ul a li span {
 
 }
-div#main div.container div.row div.main div.section div.row a button {
+div#main div.main div.row div.main div.section div.row a button {
 
 }
 
 
 
 /*ill-list*/
-div#main div.container div.list {
+div#main div.main div.list {
 	background-color: #d8fffc;
 	border-radius: 5px;
 	padding: 35px 80px 20px;
@@ -241,35 +241,35 @@ div#main div.container div.list {
 	margin-bottom: 30px;
 	overflow: auto;
 }
-div#main div.container div.list h4 {
+div#main div.main div.list h4 {
 	color: #3bc0a8;
 	margin-bottom: 20px;
 }
-div#main div.container div.list ul {
+div#main div.main div.list ul {
 	
 }
-div#main div.container div.list ul li{
+div#main div.main div.list ul li{
 	background-color: #92dbd4;
 	border-radius: 5px;
 	margin-bottom: 10px;
 	line-height: 60px;
 	font-weight: 600;
 }
-div#main div.container div.list ul li:hover{
+div#main div.main div.list ul li:hover{
 	background-color: #78c5bf;
 }
-div#main div.container div.list ul li img {
+div#main div.main div.list ul li img {
 	width: 50px;
 	height: 50px;
 	margin: 10px;
 }
-div#main div.container div.list ul li span.name {
+div#main div.main div.list ul li span.name {
 
 }
-div#main div.container div.list ul li span.fa-name {
+div#main div.main div.list ul li span.fa-name {
 
 }
-div#main div.container div.list ul li span.ill-name {
+div#main div.main div.list ul li span.ill-name {
 
 }
 
@@ -344,7 +344,7 @@ div.insert-user form div.row{
 div.insert-user form input{
 	background-color: #ffffff;
 	color: #83aba7;
-	line-height: 35px;
+	line-height: 45px;
 	margin: 5px auto 5px;
 	border: 2px solid #aeefe4;
 	border-radius: 10px;
@@ -397,14 +397,17 @@ div.insert-user form select option{
 
 /*insurance_type*/
 div.insert-user div.row{
-	
+	margin: 0px auto;
 }
 div.insert-user div.row div.img{
-	background-image: url();
-	background-repeat: no-repeat;
-	height: 206px;
-	width: 206px;
+	margin: 40px 90px 
 	vertical-align: bottom;
+}
+div.insert-user div.row div.img img{
+	height: 90%;
+	width: 100%;
+	border-radius: 10px;
+    margin-top: 20px;
 }
 div.insert-user div.row div.img div.personal_code{
 	background-color: #00000088;
@@ -414,11 +417,13 @@ div.insert-user div.row div.img div.personal_code{
 	color: #caeee7;
 	border-bottom-left-radius: 10px;
 	border-bottom-right-radius: 10px;
+	position: inherit;
+    bottom: 50px;
 }
 div.insert-user div.row div.col{
 
 }
-div.insert-user div.row div.col-4{
+div.insert-user div.row div.col-md-4{
 	margin-top: 70px;
 	margin-bottom: 30px;
 }
@@ -426,15 +431,15 @@ div.insert-user div.row div.col div.row{
 
 }
 div.insert-user div.row div.col div.row span{
-
+	line-height: 35px;
 }
 div.insert-user div.row div.col div.row span.label{
 	color: #64c0b1;
 }
-div.insert-user div.label{
+div.insert-user div.items{
 	text-align: center;
 }
-div.insert-user div.label div{
+div.insert-user div.items div.item{
 	background-color: #fff;
 	border: 2px solid #aeefe4;
 	border-radius: 10px;
@@ -443,12 +448,62 @@ div.insert-user div.label div{
 	line-height: 45px;
 	text-align: center;
 }
-div.insert-user div.label div span{
+
+
+/*personal medicine &
+
+*/
+div.insert-user div.items div{
+	line-height: 40px;
+}
+div.insert-user div.items div span{
 
 }
-div.insert-user div.label div span.label{
+div.insert-user div.items div span.label{
 	color: #5cafa0;
+	text-align: center;
+	margin: 0 auto;
+    display: block;
 }
+div.insert-user div.items div span.item{
+	display: unset !important;
+}
+
+
+div.insert-user div.items div span.label h5{
+	padding: 0px;
+	margin: 0px;
+	text-align: center;
+}
+div.insert-user div.items div span.label span{
+	padding: 0px;
+	margin: 0px;
+}
+div.insert-user div.items div div.num{
+	height: 35px;
+	width: 35px;
+	border-radius: 20px;
+	background-color: #d1e3ff;
+	color: #44c3b6;
+	margin-top: 3px;
+	text-align: center;
+	line-height: 35px;
+}
+
+div.insert-user div.items div.medicine{
+	height: 100px !important;
+	line-height: 100px;
+	padding-top: 25px;
+	overflow: visible;
+}
+div.insert-user div.items div.item:hover{
+	background-color: #f5fafaa3 !important;
+}
+div.insert-user div.items div.medicine a{
+
+}
+div.insert-user div.items div.medicine a div.row{}
+
 
 
 /*bootstrap*/
