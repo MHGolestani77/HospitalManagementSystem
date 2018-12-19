@@ -37,6 +37,12 @@ function deleteUser($id){
 	$Delete = "DELETE FROM ".UserTable." WHERE id = $id;";
 	mysqli_query(connection(), $Delete);
 }
+function getUserDate($nationalCode, $var){
+	$sql = "select * from ".UserTable." where nationalCode = '$nationalCode'";
+	$result = mysqli_query(connection(), $sql);
+	$row = mysqli_fetch_assoc($result);
+	return $row[$var];
+}
 
 //create & check password
 function createPassWord($pw, $hash){
@@ -47,11 +53,11 @@ function checkPassWord($us, $pw){
 	return 1;
 }
 
-function getUserLevelID($name){
-	$sql = "select * from ".userLevelTable." where name = '$name'";
+function getUserLevelData($id){
+	$sql = "select * from ".userLevelTable." where id = '$id'";
 	$result = mysqli_query(connection(), $sql);
 	$row = mysqli_fetch_assoc($result);
-	return $row['id'];
+	return $row['name'];
 }
 
 //ills

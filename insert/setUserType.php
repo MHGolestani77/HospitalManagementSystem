@@ -5,7 +5,7 @@
 
 		<div class="row">
 			<div class="col-md-5" style="margin: 0 auto;   padding: 0;">
-				<select id="select-user-type" class="form-control" data-toggle="dropdown" name="userType">
+				<select id="select-user-type" class="form-control" data-toggle="dropdown" name="userType" required>
 					<?php
 						$sql = "select * from ".userLevelTable;
 						$result = mysqli_query(connection(), $sql);
@@ -24,5 +24,5 @@
 		<div class="row">
 			<input type="submit" name="submit" value="مرحله بعدی" class="btn col-md-5 w-100">
 		</div>
-			<input type="hidden" name="step" value="FI">
+			<input type="hidden" name="step" value="CO">
 			<input type="hidden" name="nationalCode" value="<?php echo $_POST['nationalCode']; ?>">

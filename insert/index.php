@@ -3,6 +3,12 @@ include "../header.php";
 
 $step = isset($_POST['step'])? $_POST['step']: "GNC";
 $url = $step == "GNC" ? "http://localhost/sabtahval/api/": "";
+
+$title = array("GNC" => "افزودن کاربر",
+			   "GPD" => "اطلاعات شناسایی",
+			   "SUT" => "تعیین نوع کاربر",
+			   "CO" => "تائید اطلاعات",
+			   "FI" => "اتمام");
 ?>
 
 <div class="insert-user col-md-11">
@@ -11,15 +17,17 @@ $url = $step == "GNC" ? "http://localhost/sabtahval/api/": "";
 	    	<li id="itemGNC" class="breadcrumb-item">افزودن کاربر</li>
 	    	<li id="itemGPD" class="breadcrumb-item">اطلاعات شناسایی</li>
 	    	<li id="itemSUT" class="breadcrumb-item">تعیین نوع کاربر</li>
+	    	<li id="itemCO" class="breadcrumb-item">تائید اطلاعات</li>
 	    	<li id="itemFI"  class="breadcrumb-item">اتمام</li>
 	  	</ol>
 	</nav>
-	<h4 class="col-10">#اطلاعات شناسایی</h4>
+	<h4 class="col-10">#<?php echo $title[$step]; ?></h4>
 	<form action="<?php echo $url; ?>" method="post">
 		<?php 
 			if($step == "GNC") include "getNationalCode.php"; 
 			else if($step == "GPD") include "personalDataForm.php"; 
 			else if($step == "SUT") include "setUserType.php"; 
+			else if($step == "CO") include "confirm.php"; 
 			else if($step == "FI") include "finish.php"; 
 		?>
 	</form>
