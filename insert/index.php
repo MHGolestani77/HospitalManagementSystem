@@ -20,7 +20,7 @@ $url = $step == "GNC" ? "http://localhost/sabtahval/api/": "";
 			if($step == "GNC") include "getNationalCode.php"; 
 			else if($step == "GPD") include "personalDataForm.php"; 
 			else if($step == "SUT") include "setUserType.php"; 
-			else if($step == "FI") include "personalDataForm.php"; 
+			else if($step == "FI") include "finish.php"; 
 		?>
 	</form>
 </div>

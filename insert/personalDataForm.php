@@ -1,3 +1,4 @@
+
 		<div class="row">
 			<input type="text" name="name" value="<?php echo $_POST['name']; ?>" placeholder="نام" class="col-md-5">
 		</div>
@@ -18,6 +19,9 @@
 		</div>
 		<div class="row">
 			<input type="text" name="address" value="<?php echo $_POST['address']; ?>" placeholder="آدرس" class="col-md-5">
+		</div>
+		<div class="row">
+			<input type="text" name="phoneNumber" value="" placeholder="شماره همراه" class="col-md-5">
 		</div>
 		<div class="row">
 			<input type="submit" name="submit" value="مرحله بعدی" class="btn col-md-5 w-100">

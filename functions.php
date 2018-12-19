@@ -24,12 +24,12 @@ function check($str){
 //users
 function addUser($name, $lastName, $fatherName, $sex, $nationalCode, $phoneNumber, $birthDate, $address, $userLevelId, $insuranceEndTime, $password){
 	$Insert = "INSERT INTO ".UserTable." (name, lastName, fatherName, sex, nationalCode, phoneNumber, birthDate, address, userLevelId, insuranceEndTime, password) 
-	VALUES ('$name', '$lastName', '$fatherName', $sex, '$nationalCode', '$phoneNumber', '$birthDate', '$address', $userLevelId, '$insuranceEndTime', '$password');";
+	VALUES ('$name', '$lastName', '$fatherName', $sex, '$nationalCode', '$phoneNumber', '$birthDate', '$address', $userLevelId, '$insuranceEndTime', '".createPassWord($password, $nationalCode)."');";
 	mysqli_query(connection(), $Insert);
 }
 
-function editUser($var, $value, $id){
-	$Update = "UPDATE ".UserTable." SET $var = '$value' WHERE id = $id;";
+function editUser($var, $value, $nationalCode){
+	$Update = "UPDATE ".UserTable." SET $var = '$value' WHERE nationalCode = $nationalCode;";
 	mysqli_query(connection(), $Update);
 }
 
@@ -40,11 +40,18 @@ function deleteUser($id){
 
 //create & check password
 function createPassWord($pw, $hash){
-	return hash("sha384", $T[0].$pw.$T[strlen($T)-1]);
+	return hash("sha384", $hash[0].$pw.$hash[strlen($hash)-1]);
 }
 
 function checkPassWord($us, $pw){
 	return 1;
+}
+
+function getUserLevelID($name){
+	$sql = "select * from ".userLevelTable." where name = '$name'";
+	$result = mysqli_query(connection(), $sql);
+	$row = mysqli_fetch_assoc($result);
+	return $row['id'];
 }
 
 //ills
