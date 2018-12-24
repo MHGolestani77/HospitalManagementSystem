@@ -84,24 +84,12 @@
 		    	<li class="breadcrumb-item"><a href="#">اتمام</a></li>
 		  	</ol>
 	</nav>
-	<h4 class="col-md-10">#اطلاعات بیمه</h4>
+	<h4 class="col-md-10">#اطلاعات بیماری</h4>
 	<div class="items">
-		<div class="col-md-5 item">
-			<span class="label item">
-				عنوان بیمه:
-			</span>
-			<span>
-				بیمه فرهنگیان
-			</span>
-		</div>
-		<div class="col-md-5 item">
-			<span class="label item">
-				تاریخ پایان اعتبار:
-			</span>
-			<span>
-				1398/00/00
-			</span>
-		</div>
+		<form action="">
+			<input type="text" class="col-md-4 ill" placeholder="عنوان بیماری">
+			<input type="text" class="col-md-4 ill-info" placeholder="اطلاعات بیماری">
+		</form>
 	</div>
 
 </div>

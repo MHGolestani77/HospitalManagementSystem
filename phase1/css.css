@@ -438,6 +438,18 @@ div.insert-user div.row div.col div.row span.label{
 }
 div.insert-user div.items{
 	text-align: center;
+	color: #5cafa0;
+}
+div.insert-user div.items form{
+	
+}
+div.insert-user div.items form input{
+	display: block;
+	font-weight: 500;
+}
+div.insert-user div.items form input.ill-info{
+	min-height: 100px;
+
 }
 div.insert-user div.items div.item{
 	background-color: #fff;
@@ -456,11 +468,13 @@ div.insert-user div.items div.item{
 div.insert-user div.items div{
 	line-height: 40px;
 }
+div.insert-user div.items div.item{
+	vertical-align: top;
+}
 div.insert-user div.items div span{
 
 }
 div.insert-user div.items div span.label{
-	color: #5cafa0;
 	text-align: center;
 	margin: 0 auto;
     display: block;
@@ -489,6 +503,7 @@ div.insert-user div.items div div.num{
 	text-align: center;
 	line-height: 35px;
 }
+
 
 div.insert-user div.items div.medicine{
 	height: 100px !important;
