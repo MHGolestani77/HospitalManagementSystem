@@ -333,7 +333,7 @@ div.insert-user ul.nav a li:hover{
 */
 div.insert-user h4{
 	color: #54b1a3;
-	margin: 0 auto;
+	margin: 20px auto;
 }
 div.insert-user form{
 	padding-bottom: 20px;
@@ -519,6 +519,34 @@ div.insert-user div.items div.medicine a{
 }
 div.insert-user div.items div.medicine a div.row{}
 
+
+
+/*managerPage*/
+div.insert-user div.local-items{
+	text-align: center;
+}
+div.insert-user div.local-items div.local-info{
+	background-color: #b0e74e;
+	line-height: 65px;
+	border-radius: 10px;
+	margin: 0px;
+	margin-left: 7px;
+	margin-right: 7px;
+	margin-bottom: 10px;
+	text-align: center;
+}
+div.insert-user div.local-items div.local-info h6{
+	line-height: 65px;
+	text-align: center;
+}
+div.insert-user div.local-items div.local-info div.num{
+	font-weight: 600;
+	text-align: center;
+}
+
+div.insert-user div.items div.item div.time{
+	color: #000;
+}
 
 
 /*bootstrap*/
