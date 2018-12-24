@@ -8,6 +8,10 @@
     <title>HospitalManagementSystem</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="http://localhost/HospitalManagementSystem/assets/css/styles.css?t=<?php echo $t; ?>">
+    <link rel="stylesheet" type="text/css" href="http://localhost/HospitalManagementSystem/assets/js/select/dist/css/selectize.css">
+	<script src="http://localhost/HospitalManagementSystem/assets/js/select/examples/js/jquery.min.js"></script>
+	<script src="http://localhost/HospitalManagementSystem/assets/js/select/dist/js/standalone/selectize.js"></script>
+	<script src="http://localhost/HospitalManagementSystem/assets/js/select/examples/js/index.js"></script>
  </head>
  <body>
  	<div id="main">

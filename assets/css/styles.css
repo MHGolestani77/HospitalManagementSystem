@@ -464,3 +464,15 @@ div.insert-user div.label div span.label{
 .breadcrumb-item+.breadcrumb-item::before{
 	padding: 0 1rem;
 }
+
+.selectize-dropdown{
+    overflow-y: scroll;
+    height: 65px;
+}
+
+.selectize-control {
+	margin: 10px auto;
+	background: none;
+	border: none;
+	padding: 0;
+}

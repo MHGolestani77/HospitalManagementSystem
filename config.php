@@ -7,7 +7,7 @@ define('DBname', 'hms');
 
 //tables
 define('UserTable', 'users');
-define('userLevelTable', 'usersLevel');
+define('userLevelTable', 'userlevel');
 define('doctorsTable', 'doctors');
 define('clerksTable', 'clerks');
 define('illsTable', 'ills');
