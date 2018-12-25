@@ -8,9 +8,13 @@ define('DBname', 'hms');
 //tables
 define('UserTable', 'users');
 define('userLevelTable', 'userlevel');
-define('doctorsTable', 'doctors');
+define('adminsTable', 'admins');
 define('clerksTable', 'clerks');
+define('doctorsTable', 'doctors');
 define('illsTable', 'ills');
+define('illnessTable', 'illness');
+define('illnessDetailsTable', 'illnessdetails');
 define('processTable', 'process');
 define('medicineTable', 'medicine');
+define('medicineDetailsTable', 'medicinedetails');
 define('PasswordTable', 'Password');

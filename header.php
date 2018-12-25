@@ -1,4 +1,4 @@
-<?php include "functions.php"; ?>
+<?php include "login/session.php"; ?>
 <?php $t=rand()*rand(); ?>
  <!DOCTYPE html>
  <html lang="en">
@@ -18,7 +18,7 @@
  		<div class="container">
  			<div class="row">
  				<div class="navbar col-md-11">
- 					<div class="col-md-10">
+ 					<div class="col-md-8">
  						<a href="#">
  							<img src="http://localhost/HospitalManagementSystem/assets/img/logo.png" alt="">
  							<p>سیستم مدیریت بیمارستان</p>
@@ -27,6 +27,11 @@
  					<div class="col-md-2">
  						<a href="">
  							<button type="button" class="btn btn-light">تنظیمات</button>
+ 						</a>
+ 					</div>
+ 					<div class="col-md-2">
+ 						<a href="http://localhost/HospitalManagementSystem/login/destroyLogin.php">
+ 							<button type="button" class="btn btn-danger">خروج</button>
  						</a>
  					</div>
  				</div>

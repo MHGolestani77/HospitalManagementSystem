@@ -102,6 +102,12 @@ li{
 	list-style: none;
 }
 
+a.btn{
+	color: #389686;
+	background-color: #aeefe4;
+	line-height: 25px;
+}
+
 html, body {
     height: 100%;
     min-height: 100%;
@@ -137,14 +143,14 @@ div#main div.container div.row div.navbar {
 	width: 100%;
 	margin: 0 auto;
 }
-div#main div.container div.row div.navbar div.col-md-10 {
+div#main div.container div.row div.navbar div.col-md-8 {
 	
 }
-div#main div.container div.row div.navbar div.col-md-10 img {
+div#main div.container div.row div.navbar div.col-md-8 img {
 	width: 100px;
 	display: inline-block;
 }
-div#main div.container div.row div.navbar div.col-md-10 p {
+div#main div.container div.row div.navbar div.col-md-8 p {
 	display: inline-block;
 }
 div#main div.container div.row div.navbar div.col-md-2 {
@@ -200,7 +206,7 @@ div#main div.container div.row div.main div.section div.row ul a li {
 	line-height: 35px;
 	background: #ffffff85;
 	margin: 5px;
-	padding: 0 5px;
+	padding: 5px;
 	border-radius: 5px;
 	text-align: center;
 }
@@ -225,6 +231,9 @@ div#main div.container div.row div.main div.section div.row ul a li small.label 
 }
 div#main div.container div.row div.main div.section div.row ul a li i {
 
+}
+div#main div.container div.row div.main div.section div.row ul a li i img {
+	width: 75px;
 }
 div#main div.container div.row div.main div.section div.row ul a li span {
 
