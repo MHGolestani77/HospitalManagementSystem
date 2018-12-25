@@ -468,6 +468,109 @@ div.insert-user div.label div span.label{
 }
 
 
+/*personal medicine &
+
+*/
+div.insert-user img{
+	width: 100%;
+	border-radius: 10px;
+}
+div.insert-user.col-md-11 div.row.col-md-10 div.col {
+	height: 100%;
+}
+div.insert-user.col-md-11 div.row.col-md-10 div.col div.personal_code {
+	position: absolute;
+	left: 15px;
+	right: 15px;
+	bottom: 0;
+}
+div.insert-user.col-md-11 div.row.col-md-10 div.col-md-4 div.row {
+	line-height: 35px;
+}
+div.insert-user div.items div{
+	line-height: 40px;
+}
+div.insert-user div.items div.item{
+	vertical-align: top;
+}
+div.insert-user div.items div span{
+
+}
+div.insert-user div.items div span.label{
+	text-align: center;
+	margin: 0 auto;
+    display: block;
+}
+div.insert-user div.items div span.item{
+	display: unset !important;
+}
+
+
+div.insert-user div.items div span.label h5{
+	padding: 0px;
+	margin: 0px;
+	text-align: center;
+}
+div.insert-user div.items div span.label span{
+	padding: 0px;
+	margin: 0px;
+}
+div.insert-user div.items div div.num{
+	height: 35px;
+	width: 35px;
+	border-radius: 20px;
+	background-color: #d1e3ff;
+	color: #44c3b6;
+	margin-top: 3px;
+	text-align: center;
+	line-height: 35px;
+}
+
+
+div.insert-user div.items div.medicine{
+	height: 100px !important;
+	line-height: 100px;
+	padding-top: 25px;
+	overflow: visible;
+}
+div.insert-user div.items div.item:hover{
+	background-color: #f5fafaa3 !important;
+}
+div.insert-user div.items div.medicine a{
+
+}
+div.insert-user div.items div.medicine a div.row{}
+
+
+
+/*managerPage*/
+div.insert-user div.local-items{
+	text-align: center;
+}
+div.insert-user div.local-items div.local-info{
+	background-color: #b0e74e;
+	line-height: 65px;
+	border-radius: 10px;
+	margin: 0px;
+	margin-left: 7px;
+	margin-right: 7px;
+	margin-bottom: 10px;
+	text-align: center;
+}
+div.insert-user div.local-items div.local-info h6{
+	line-height: 65px;
+	text-align: center;
+}
+div.insert-user div.local-items div.local-info div.num{
+	font-weight: 600;
+	text-align: center;
+}
+
+div.insert-user div.items div.item div.time{
+	color: #000;
+}
+
+
 /*bootstrap*/
 
 .breadcrumb-item+.breadcrumb-item::before{

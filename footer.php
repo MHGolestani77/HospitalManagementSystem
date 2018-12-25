@@ -1,3 +1,4 @@
+			</div>
 		</div>
 	</div>
     <script src="http://localhost/HospitalManagementSystem/assets/anime-master/anime.min.js"></script>
