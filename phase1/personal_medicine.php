@@ -103,7 +103,7 @@
 		<div class="col-5 item medicine">
 			<a href="#">
 				<div class="row">
-					<div class="col col-1 num">2</div>
+					<div class="col col-md-1 num">2</div>
 					<div class="col col-md-10 text-center w-100">
 						<span class="label">
 							<h5>عنوان دارو (مدت زمان مصرف)</h5>
