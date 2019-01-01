@@ -143,23 +143,23 @@ div#main div.container div.row div.navbar {
 	width: 100%;
 	margin: 0 auto;
 }
-div#main div.container div.row div.navbar div.col-md-8 {
+div#main div.container div.row div.navbar div.col-md-9 {
 	
 }
-div#main div.container div.row div.navbar div.col-md-8 img {
+div#main div.container div.row div.navbar div.col-md-9 img {
 	width: 100px;
 	display: inline-block;
 }
-div#main div.container div.row div.navbar div.col-md-8 p {
+div#main div.container div.row div.navbar div.col-md-9 p {
 	display: inline-block;
 }
-div#main div.container div.row div.navbar div.col-md-2 {
+div#main div.container div.row div.navbar div.col-md-1 {
+    padding: 0 5px;
+}
+div#main div.container div.row div.navbar div.col-md-1 a {
 	
 }
-div#main div.container div.row div.navbar div.col-md-2 a {
-	
-}
-div#main div.container div.row div.navbar div.col-md-2 a button {
+div#main div.container div.row div.navbar div.col-md-1 a button {
 	width: 100%;
 }
 div#main div.container div.row div.main {
@@ -230,13 +230,15 @@ div#main div.container div.row div.main div.section div.row ul a li small.label 
 	display: inline-block;
 }
 div#main div.container div.row div.main div.section div.row ul a li i {
-
+	padding: 0;
 }
 div#main div.container div.row div.main div.section div.row ul a li i img {
-	width: 75px;
+	width: 100%;
+	padding: 0;
+	border-radius: 5px;
 }
 div#main div.container div.row div.main div.section div.row ul a li span {
-
+	line-height: 60px;
 }
 div#main div.container div.row div.main div.section div.row a button {
 
@@ -304,7 +306,7 @@ div.insert-user nav{
 }
 div.insert-user nav ol{
 	background-color: #92dbd4;
-	line-height: 40px;
+	line-height: 30px;
 	margin: 30px auto 30px;
 	border-radius: 5px;
 	overflow: inherit;
@@ -369,7 +371,7 @@ div.insert-user form input{
 div.insert-user form input[type="text"]{
 	
 }
-div.insert-user form input[type="submit"]{
+div.insert-user form input[type="submit"], div.insert-user form input[type="button"]{
     color: #389686;
     background-color: #aeefe4;
     line-height: 25px;/*
@@ -468,23 +470,49 @@ div.insert-user div.label div span.label{
 }
 
 
-/*personal medicine &
-
+/*personal medicine & profile
 */
+div.modal form {
+
+}
+div.modal form input {
+
+}
+div.modal form input[type='file'] {
+	display: none;
+}
+div.modal form label {
+	color: #389686;
+	border: 3px solid #aeefe4;
+	margin: 5px auto;
+}
+div.modal form label:hover {
+	background: #aeefe4;
+}
+div.modal form input[type='submit'] {
+	color: #389686;
+    background-color: #aeefe4;
+    line-height: 25px;
+	margin: 5px auto;
+}
+div.modal a {
+	margin: 5px auto;
+}
+
 div.insert-user img{
 	width: 100%;
 	border-radius: 10px;
 }
-div.insert-user.col-md-11 div.row.col-md-10 div.col {
+div.insert-user.col-md-11 div.row.col-md-11 div.col {
 	height: 100%;
 }
-div.insert-user.col-md-11 div.row.col-md-10 div.col div.personal_code {
+div.insert-user.col-md-11 div.row.col-md-11 div.col div.personal_code {
 	position: absolute;
 	left: 15px;
 	right: 15px;
 	bottom: 0;
 }
-div.insert-user.col-md-11 div.row.col-md-10 div.col-md-4 div.row {
+div.insert-user.col-md-11 div.row.col-md-11 div.col-md-4 div.row {
 	line-height: 35px;
 }
 div.insert-user div.items div{
@@ -504,7 +532,6 @@ div.insert-user div.items div span.label{
 div.insert-user div.items div span.item{
 	display: unset !important;
 }
-
 
 div.insert-user div.items div span.label h5{
 	padding: 0px;
@@ -570,6 +597,115 @@ div.insert-user div.items div.item div.time{
 	color: #000;
 }
 
+/*massenger*/
+div.massageBox {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    margin-bottom: -25px;
+}
+button#massage {
+	text-align: center;
+	border: 1px solid #0055b1;
+	border-bottom: 0;
+	border-bottom-right-radius: 0;
+	border-bottom-left-radius: 0;
+}
+div#main iframe {
+	padding: 0;
+	height: 0;
+	border: 1px solid #0055b1;
+	border-top: 0;
+	border-bottom: 0;
+}
+div#massenger {
+	padding: 10px;
+}
+div#massenger form {
+
+}
+div#massenger form div {
+
+}
+div#massenger form div.select {
+
+}
+div#massenger form div.select div.row {
+
+}
+div#massenger form div.select div.row label {
+
+}
+div#massenger form div.select div.row input {
+
+}
+div#massenger form div.select div.row input[type="submit"] {
+
+}
+div#massenger form div.massenger {
+	margin-top: 40px;
+}
+div#massenger form div.massenger div.container-fluid {
+
+}
+div#massenger form div.massenger div.container-fluid div.row {
+
+}
+div#massenger form div.massenger div.container-fluid div.row.massages {
+	
+}
+div#massenger form div.massenger div.container-fluid div.row.massages div.row {
+
+}
+div#massenger form div.massenger div.container-fluid div.row.massages div.row img {
+	margin: 10px auto;
+	height: 50px;
+    border-radius: 100%;
+}
+div#massenger form div.massenger div.container-fluid div.row.massages div.row p {
+	width: 100%;
+}
+div#massenger form div.massenger div.container-fluid div.row.massages div.sender {
+	background: #d5fffa;
+    border-radius: 5px;
+    border: 1px solid #27e4c8;
+    margin: 5px 0;
+}
+div#massenger form div.massenger div.container-fluid div.row.massages div.sender img {
+	
+}
+div#massenger form div.massenger div.container-fluid div.row.massages div.getter{
+	background: #f8ffd5;
+    border-radius: 5px;
+    border: 1px solid #d2e427;
+    margin: 5px 0;
+}
+div#massenger form div.massenger div.container-fluid div.row.massages div.getter img {
+	
+}
+div#massenger form div.massenger div.container-fluid div.row.form {
+    position: fixed;
+    top: 20px;
+    left: 45px;
+    right: 45px;
+}
+div#massenger form div.massenger div.container-fluid div.row.form input {
+	margin: 5px 0;
+}
+div#massenger form div.massenger div.container-fluid div.row.form input[type="text"] {
+    background: white;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+}
+div#massenger form div.massenger div.container-fluid div.row.form input[type="submit"] {
+    background: white;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+}
+div#massenger form div.massenger div.container-fluid div.row.form input[type="submit"]:hover {
+    background: #f0f0f0;
+}
+
 
 /*bootstrap*/
 
@@ -582,9 +718,114 @@ div.insert-user div.items div.item div.time{
     height: 65px;
 }
 
+.selectize-input.items.required.full.has-options.has-items{
+	padding: 0 5px;
+}
+
+.selectize-input.items div.item {
+	line-height: 35px;
+}
+
 .selectize-control {
 	margin: 10px auto;
 	background: none;
 	border: none;
 	padding: 0;
+}
+
+ul.nav.nav-pills{
+	background: #92dbd4;
+	margin: 5px auto;
+}
+
+ul.nav.nav-pills li.nav-item a.nav-link {
+	
+}
+
+ul.nav.nav-pills li.nav-item a.nav-link.active {
+	background: #54b1a3;
+}
+
+div.tab-content {
+	margin: 5px auto;
+}
+
+div.tab-content div.tab-pane.container{
+	
+}
+
+div.tab-content div.row{
+	padding: 5px;
+}
+
+div.tab-content div.row input,
+div.tab-content div.row textarea{
+	background-color: #ffffff;
+	color: #83aba7;
+    line-height: 35px;
+    margin: 0 auto;
+    border: 2px solid #aeefe4;
+    border-radius: 10px;
+    text-align: center;
+    outline: none;
+}
+
+div.tab-content div.row input[disabled]{
+	background: #edfffe;
+}
+
+div.tab-content div.row input[type="submit"]{
+	background: #92dbd4;
+	color: #000;
+	line-height: 25px;
+}
+
+div.tab-content ul {
+	padding: 5px;
+}
+
+div.tab-content ul li {
+	background-color: #ffffff;
+	color: #83aba7;
+    line-height: 35px;
+    margin: 5px auto;
+    padding: 5px;
+    border: 2px solid #aeefe4;
+    border-radius: 10px;
+    text-align: center;
+    outline: none;
+}
+
+div.tab-content ul li:hover {
+	background-color: #aeefe4;
+}
+
+div.tab-content ul li i {
+	background: rgb(174, 239, 228);
+    width: 34px;
+    height: 35px;
+    border-radius: 15px;
+    float: right;
+    text-align: center;
+}
+
+div.tab-content ul li i.download {
+    background: rgb(174, 239, 228);
+    float: left;
+    border-radius: 15px;
+    line-height: 35px;
+}
+
+div.tab-content ul li:hover i {
+	background-color: #fff;
+	color: #83aba7;
+}
+
+div.tab-content ul li span {
+
+}
+
+
+div.tab-content div.tab-pane h4{
+	color: #54b1a3;
 }

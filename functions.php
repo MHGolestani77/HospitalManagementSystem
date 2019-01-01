@@ -21,12 +21,49 @@ function check($str){
 	return $str;
 }
 
+//check user
+function checkURL($id, $userLevelId , $equal){
+	$sql = "select * from ".UserTable." where id = $id AND userLevelId $equal $userLevelId";
+	$result = mysqli_query(connection(), $sql);
+	return mysqli_num_rows($result) > 0 ? 1 : 0;
+}
+
+//setAction
+function getActionName($id){
+	$title = array('lu' => 'ورود کاربر',
+			   'exu' => 'خروج کاربر',
+			   'au' => 'افزودن کاربر',
+			   'eu' => 'ویرایش کاربر',
+			   'du' => 'حذف کاربر',
+			   'slu' => 'تعیین سطم دسترسی',
+			   'sdtu' => 'تعیین پزشک برای بیمار',
+			   'situ' => 'تعیین بیماری',
+			   'sptu' => 'تعیین فرآیند',
+			   'smtu' => 'تعیین دارو',
+			   'st' => 'ثبت نتیجه آزمایش',
+			   'sm' => 'ارسال پیام',);
+	return $title[$id];
+}
+
+function setAction($actionId, $id){
+	require_once dirname(__FILE__) . '/jdatetime.class.php';
+	$date = new jDateTime(); //Creates a new instance
+	$date = new jDateTime(true, true, 'Asia/Tehran');
+	
+	$Insert = "INSERT INTO ".blackBox." (title, date, userId) 
+	VALUES ('".getActionName($actionId)."', '".$date->date("Y/m/d")."', $id);";
+	mysqli_query(connection(), $Insert);
+}
+
 //users
 function addUser($name, $lastName, $fatherName, $sex, $nationalCode, $phoneNumber, $birthDate, $address, $userLevelId, $insuranceEndTime, $password){
 	$Insert = "INSERT INTO ".UserTable." (name, lastName, fatherName, sex, nationalCode, phoneNumber, birthDate, address, userLevelId, insuranceEndTime, password) 
 	VALUES ('$name', '$lastName', '$fatherName', $sex, '$nationalCode', '$phoneNumber', '$birthDate', '$address', $userLevelId, '$insuranceEndTime', '".createPassWord($password, $nationalCode)."');";
-	if (!checkUser($nationalCode))
+	if (!checkUser($nationalCode)){
 		mysqli_query(connection(), $Insert);
+		if(checkUser($nationalCode))
+			setAction("au" ,getUserData($nationalCode, "id"));
+	}
 	else
 		echo "<script>window.location.href = 'http://localhost/HospitalManagementSystem/createUser/?result=error';</script>";
 }
@@ -34,11 +71,13 @@ function addUser($name, $lastName, $fatherName, $sex, $nationalCode, $phoneNumbe
 function editUser($var, $value, $nationalCode){
 	$Update = "UPDATE ".UserTable." SET $var = '$value' WHERE nationalCode = $nationalCode;";
 	mysqli_query(connection(), $Update);
+	setAction("eu" ,getUserData($nationalCode, "id"));
 }
 
 function deleteUser($id){
 	$Delete = "DELETE FROM ".UserTable." WHERE id = $id;";
 	mysqli_query(connection(), $Delete);
+	setAction("du" ,$id);
 }
 
 function getUserData($nationalCode, $var){
@@ -70,8 +109,10 @@ function checkPassWord($un, $pw){
 	$sql = "select * from ".UserTable." where nationalCode = '$un' AND password = '".createPassWord($pw, $un)."'";
 	$result = mysqli_query(connection(), $sql);
 	$row = mysqli_fetch_assoc($result);
-	if(mysqli_num_rows($result))
+	if(mysqli_num_rows($result)){
+		setAction("lu", getUserData($un, "id"));
 		return $row['id'];
+	}
 	else
 		return 0;
 }
@@ -84,9 +125,13 @@ function getUserLevelData($id){
 }
 
 //ills
-function setIll($nationalCode, $doctorId, $loginDate){
+function setIll($nationalCode, $doctorId){
+	require_once dirname(__FILE__) . '/jdatetime.class.php';
+	$date = new jDateTime(); //Creates a new instance
+	$date = new jDateTime(true, true, 'Asia/Tehran');
+
 	$Insert = "INSERT INTO ".illsTable." (userId, doctorId, loginDate) 
-	VALUES ('".getUserData($nationalCode, "id")."', '$doctorId', '$loginDate');";
+	VALUES ('".getUserData($nationalCode, "id")."', '$doctorId', '".$date->date("r")."');";
 	mysqli_query(connection(), $Insert);
 }
 
@@ -105,6 +150,13 @@ function getIllData($id, $var){
 	$result = mysqli_query(connection(), $sql);
 	$row = mysqli_fetch_assoc($result);
 	return $row[$var];
+}
+
+function getIllId($id){
+	$sql = "select * from ".illsTable." where userId = $id";
+	$result = mysqli_query(connection(), $sql);
+	$row = mysqli_fetch_assoc($result);
+	return $row['id'];
 }
 
 //illness
@@ -133,6 +185,16 @@ function getIllnessDetail($id){
 	$result = mysqli_query(connection(), $sql);
 	$row = mysqli_fetch_assoc($result);
 	return $row['title'];
+}
+
+function setTest($title, $fileName, $id){
+	require_once dirname(__FILE__) . '/jdatetime.class.php';
+	$date = new jDateTime(); //Creates a new instance
+	$date = new jDateTime(true, true, 'Asia/Tehran');
+
+	$insert = "INSERT INTO ".test." (illnessId, title ,fileName ,date) VALUES ($id, '$title', '$fileName', '".$date->date('Y/m/d')."')";
+	mysqli_query(connection(), $insert);
+	setAction("st", getIllData(getIllnessData($id, "illId"), "userId"));
 }
 
 
@@ -182,9 +244,21 @@ function setDoctor($userId, $expert){
 } 
 
 function setDoctorExpert($expert, $id){
-	$Update = "UPDATE ".doctorsTable." SET expert = '$expert', specialId = '".$expert[0]."-".getDoctorData($id, "specialId")."' where id = $id;";
+	$Update = "UPDATE ".doctorsTable." SET expert = '$expert' where id = ".getDoctorId($id).";";
 	mysqli_query(connection(), $Update);
+	// setDoctorSpecialId($expert, $id);
 } 
+
+// function setDoctorSpecialId($expert, $id){
+// 	$specialId = getDoctorData(getDoctorId($id), "specialId");
+// 	if(strlen($specialId) == 5){
+// 		$specialId = $expert[0]."-".$specialId;
+// 	}else{
+// 		$specialId[0] = $expert[0];
+// 	}
+// 	$Update = "UPDATE ".doctorsTable." SET specialId = '$specialId' where id = ".getDoctorId($id).";";
+// 	mysqli_query(connection(), $Update);
+// }
 
 function deleteDoctor($id){
 	$Delete = "DELETE FROM ".doctorsTable." WHERE id = $id;";
@@ -206,8 +280,15 @@ function getDoctorId($userId){
 }
 
 //massages
-function createMassage(){
+function createMassage($mainText, $subject, $id){
+	require_once dirname(__FILE__) . '/jdatetime.class.php';
+	$date = new jDateTime(); //Creates a new instance
+	$date = new jDateTime(true, true, 'Asia/Tehran');
 
+	$insert = "INSERT INTO ".massage." (mainText, subject, senderId, date, time)
+									VALUES ('$mainText', '$subject', $id, '".$date->date("Y/m/d")."', '".$date->date("H:i")."')";
+	mysqli_query(connection(), $insert);
+	setAction("sm", $id);
 }
 
 function editMassage(){

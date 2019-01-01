@@ -10,7 +10,10 @@
 	}elseif ($userType == 4) {
 		$userType = "ill";
 	}
-?>
+
+	if(isset($_GET['error']))
+		include "error.php";
+?>	
 
  				<div class="main w-100">
  					<?php include $userType.".php"; ?>

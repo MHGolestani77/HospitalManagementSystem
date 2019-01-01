@@ -4,7 +4,13 @@
  						</div>
  						<div class="row">
  							<div class="col-md-7">
- 								<img src="http://localhost/HospitalManagementSystem/assets/img/back.jpg" alt="">
+ 								<?php 
+									$path = "../uploads/".$_SESSION['userId'].".jpg";
+									if (!file_exists($path)) {
+										$path = "../assets/img/".getUserData($_SESSION['login_user'], "userLevelId").getUserData($_SESSION['login_user'], "sex").".jpg";
+									}
+								?>
+ 								<img src="<?php echo $path; ?>" alt="">
  							</div>
  						</div>
  						<div class="row">
@@ -48,7 +54,7 @@
  							</ul>
  						</div>
  						<div class="row">
- 							<a href="">
+ 							<a href="../profile">
  								<button class="btn btn-light">ویرایش</button>
  							</a>
  						</div>
@@ -59,7 +65,7 @@
  						</div>
  						<div class="row">
  							<ul>
- 								<a href="../setIll">
+ 								<a href="../setIllness">
  									<li>تشخیص بیماری</li>
  								</a>
  								<a href="">
@@ -82,10 +88,18 @@
  									$result = mysqli_query(connection(), $sql);
  									while($feild = mysqli_fetch_array($result)) :
  								?>
- 								<a href="">
+ 								<a href="../profile/?id=<?php echo $feild['userId']; ?>">
  									<li>
- 										<i><img src="../assets/img/memberId.jpg" alt=""></i>
- 										<span><?php echo getUserData(getNationalCode($feild['userId']), "name")." ".getUserData(getNationalCode($feild['userId']), "lastName") ?></span>
+		 								<?php 
+											$path = "../uploads/".$feild['userId'].".jpg";
+											if (!file_exists($path)) {
+												$path = "../assets/img/".getUserData(getNationalCode($feild['userId']), "userLevelId").getUserData(getNationalCode($feild['userId']), "sex").".jpg";
+											}
+										?>
+										<div class="row" style="padding: 0;">
+ 											<i class="col-md-3"><img src="<?php echo $path; ?>" class="col" alt=""></i>
+ 											<span class="col-md-9"><?php echo getUserData(getNationalCode($feild['userId']), "name")." ".getUserData(getNationalCode($feild['userId']), "lastName") ?></span>
+ 										</div>
  									</li>
  								</a>
  								<?php endwhile; ?>

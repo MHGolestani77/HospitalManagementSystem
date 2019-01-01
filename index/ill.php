@@ -4,7 +4,13 @@
  						</div>
  						<div class="row">
  							<div class="col-md-7">
- 								<img src="assets/img/back.jpg" alt="">
+ 								<?php 
+									$path = "uploads/".$_SESSION['userId'].".jpg";
+									if (!file_exists($path)) {
+										$path = "assets/img/".getUserData($_SESSION['login_user'], "userLevelId").getUserData($_SESSION['login_user'], "sex").".jpg";
+									}
+								?>
+ 								<img src="http://localhost/HospitalManagementSystem/<?php echo $path; ?>" alt="">
  							</div>
  						</div>
  						<div class="row">
@@ -12,44 +18,41 @@
  								<a href="">
  									<li>
  										<small class="label">نام</small>
- 										محمد حسین
+ 										م<?php echo getUserData($_SESSION['login_user'], "name"); ?>
  									</li>
  								</a>
- 									<a href="">
+ 								<a href="">
  									<li>
  										<small class="label">نام خانوادگی</small>
- 										گلستانی
+ 										<?php echo getUserData($_SESSION['login_user'], "lastName"); ?>
  									</li>
  								</a>
- 									<a href="">
+ 								<a href="">
  									<li>
  										<small class="label">نام پدر</small>
- 										جواد
+ 										<?php echo getUserData($_SESSION['login_user'], "fatherName"); ?>
  									</li>
  								</a>
- 									<a href="">
+ 								<a href="">
  									<li>
  										<small class="label">کد ملی</small>
- 										105082...
+ 										<?php echo $_SESSION['login_user']; ?>
  									</li>
  								</a>
- 									<a href="">
+ 								<a href="">
  									<li>
- 										<small class="label">کد نظام پزشکی</small>
- 										0bbbb00000
- 									</li>
- 								</a>
- 									<a href="">
- 									<li>
- 										<small class="label">تخصص</small>
- 										هوشبری
+ 										<small class="label">نام پزشک</small>
+ 										<?php 
+ 											$dId = getNationalCode(getDoctorData(getIllData(getIllId($_SESSION['userId']), "doctorId"), "userId"));
+ 											echo getUserData($dId, "name")." ".getUserData($dId, "lastName");
+ 										?>
  									</li>
  								</a>
  							</ul>
  						</div>
  						<div class="row">
- 							<a href="">
- 								<button class="btn btn-light">لیست کامل</button>
+ 							<a href="../profile">
+ 								<button class="btn btn-light">اطلاعات کامل</button>
  							</a>
  						</div>
  					</div>
@@ -60,43 +63,28 @@
  						<div class="row">
  							<ul>
  								<a href="">
- 									<li>تشخیص بیماری</li>
- 								</a>
- 								<a href="">
- 									<li>تعریف فرآیند درمان</li>
- 								</a>
- 								<a href="">
- 									<li>تجویز دارو</li>
+ 									<li>ارسال نتیجه آزمایش های قبلی</li>
  								</a>
  							</ul>
  						</div>
  					</div>
  					<div class="col-md-4 section section3">
  						<div class="row">
- 							<p>لیست اعضا</p>
+ 							<p>بیماری ها</p>
  						</div>
  						<div class="row">
  							<ul>
  								<a href="">
+ 									<?php 
+ 										$sql = "select * from ".illnessTable." where illId = ".getIllId($_SESSION['userId']);
+ 										$result = mysqli_query(connection(), $sql);
+ 										while ($feild = mysqli_fetch_array($result)) :
+ 									?>
  									<li>
  										<i></i>
- 										<span>نام بیمار یک</span>
- 										<small></small>
+ 										<span><?php echo getIllnessDetail($feild['illnessId']) ?></span>
  									</li>
- 								</a>
- 								<a href="">
- 									<li>
- 										<i></i>
- 										<span>نام بیمار دو</span>
- 										<small></small>
- 									</li>
- 								</a>
- 								<a href="">
- 									<li>
- 										<i></i>
- 										<span>نام بیمار سه</span>
- 										<small></small>
- 									</li>
+ 									<?php endwhile; ?>
  								</a>
  							</ul>
  						</div>

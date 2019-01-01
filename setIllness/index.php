@@ -1,6 +1,10 @@
 <?php 
 include "../header.php";
 
+if(!checkURL($_SESSION['userId'], 3, "="))
+	echo "<script>window.location.href = 'http://localhost/HospitalManagementSystem/index/?error=access&id=situ';</script>";
+
+
 $error = isset($_GET['result']) ? "display: block;" : "display: none;";
 $step = isset($_POST['step'])? $_POST['step']: "SSI";
 $url = $step == "SI" ? "http://localhost/insurance/api/": "";

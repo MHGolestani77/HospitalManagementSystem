@@ -4,7 +4,13 @@
  						</div>
  						<div class="row">
  							<div class="col-md-7">
- 								<img src="assets/img/back.jpg" alt="">
+ 								<?php 
+									$path = "uploads/".$_SESSION['userId'].".jpg";
+									if (!file_exists($path)) {
+										$path = "assets/img/".getUserData($_SESSION['login_user'], "userLevelId").".jpg";
+									}
+								?>
+ 								<img src="http://localhost/HospitalManagementSystem/<?php echo $path; ?>" alt="">
  							</div>
  						</div>
  						<div class="row">

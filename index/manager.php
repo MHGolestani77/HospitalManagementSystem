@@ -4,7 +4,13 @@
  						</div>
  						<div class="row">
  							<div class="col-md-7">
- 								<img src="assets/img/back.jpg" alt="">
+ 								<?php 
+									$path = "uploads/".$_SESSION['userId'].".jpg";
+									if (!file_exists($path)) {
+										$path = "assets/img/".getUserData($_SESSION['login_user'], "userLevelId").".jpg";
+									}
+								?>
+ 								<img src="http://localhost/HospitalManagementSystem/<?php echo $path; ?>" alt="">
  							</div>
  						</div>
  						<div class="row">
@@ -12,37 +18,25 @@
  								<a href="">
  									<li>
  										<small class="label">نام</small>
- 										محمد حسین
+ 										<?php echo getUserData($_SESSION['login_user'], "name"); ?>
  									</li>
  								</a>
- 									<a href="">
+ 								<a href="">
  									<li>
  										<small class="label">نام خانوادگی</small>
- 										گلستانی
+ 										<?php echo getUserData($_SESSION['login_user'], "lastName"); ?>
  									</li>
  								</a>
- 									<a href="">
+ 								<a href="">
  									<li>
  										<small class="label">نام پدر</small>
- 										جواد
+ 										<?php echo getUserData($_SESSION['login_user'], "fatherName"); ?>
  									</li>
  								</a>
- 									<a href="">
+ 								<a href="">
  									<li>
  										<small class="label">کد ملی</small>
- 										105082...
- 									</li>
- 								</a>
- 									<a href="">
- 									<li>
- 										<small class="label">کد نظام پزشکی</small>
- 										0bbbb00000
- 									</li>
- 								</a>
- 									<a href="">
- 									<li>
- 										<small class="label">تخصص</small>
- 										هوشبری
+ 										<?php echo $_SESSION['login_user']; ?>
  									</li>
  								</a>
  							</ul>
@@ -59,7 +53,7 @@
  						</div>
  						<div class="row">
  							<ul>
- 								<a href="../insert/">
+ 								<a href="../createUser/">
  									<li>افزودن  کاربر</li>
  								</a>
  								<a href="../chart/">
