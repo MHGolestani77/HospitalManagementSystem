@@ -549,6 +549,120 @@ div.insert-user div.items div.item div.time{
 }
 
 
+/*main*/
+div.main_page{}
+div.main_page div{}
+div.main_page div h4{
+	text-align: center;
+	color: #6d7378;
+	padding-bottom: 20px;
+}
+div.main_page div.first_item{
+	min-height: 500px;
+	width: 100%;
+	background-image: url('../assets/img/header.jpg');
+	background-size: 100%;
+	background-repeat: no-repeat;
+}
+div.main_page div.first_item nav.main_nav{
+	background-color: #0000005c;
+	min-height: 75px;
+}
+div.main_page div.first_item nav.main_nav div.navbar-header{}
+div.main_page div.first_item nav.main_nav div.navbar-header a{}
+div.main_page div.first_item nav.main_nav div.navbar-header a img{
+	height: 40px;
+	width: 125px;
+}
+div.main_page div.first_item nav.main_nav ul{
+	
+}
+div.main_page div.first_item nav.main_nav ul li{
+	margin-left: 40px;
+}
+div.main_page div.first_item nav.main_nav ul li a{
+	color: #ffffff;
+}
+div.main_page div.first_item nav.main_nav button{
+	background-color: unset;
+	border: 2px solid #ffffff;
+	color: #ffffff;
+	line-height: 50px;
+	text-align: center;
+	font-size: 20px;
+	vertical-align: middle;
+	height: 50px;
+	width: 140px;
+}
+div.main_page div.first_item nav.main_nav button:hover{
+
+}
+div.main_page div.second_item{
+	min-height: 550px;
+	background-color: #aee5e0;
+	padding-top: 40px;
+}
+div.main_page div.second_item div.row{}
+div.main_page div.second_item div.row div.explain{
+
+}
+div.main_page div.second_item div.row div.brand{}
+div.main_page div.second_item div.row div.brand img{}
+div.main_page div.third_item{
+	min-height: 550px;
+	background-color: #f6f6f6;
+	padding-top: 40px;
+}
+div.main_page div.third_item div.row{
+	position: relative;
+	right: 75px;
+}
+div.main_page div.third_item div.row div.item{
+	height: 400px;
+	width: 300px;
+	background-color: #ffffff;
+	margin: 20px;
+}
+div.main_page div.third_item div.row div.item p{}
+div.main_page div.forth_item{
+	min-height: 550px;
+	background-color: #89f68d;
+	padding-top: 40px;
+	text-align: center;
+}
+div.main_page div.forth_item p{
+	color: #638e70;
+	text-align: center;
+}
+div.main_page div.forth_item form{
+	text-align: -webkit-center;
+	text-align: -moz-center;
+	margin-top: 50px;
+}
+div.main_page div.forth_item form input{
+	display: block;
+	text-align: center;
+	background-color: unset;
+	border: 0;
+	border-bottom: 3px solid #ffffff;
+	margin-bottom: 10px;
+	line-height: 55px;
+	width: 400px;
+	color: #ffffff;
+}
+div.main_page div.forth_item form input.massage{
+	min-height: 110px;
+}
+div.main_page div.forth_item form input[type="text"]{
+	
+}
+div.main_page div.forth_item form input[type="email"]{}
+div.main_page div.forth_item form input[type="submit"]{
+	background-color: #ffffff;
+	color: #86a875;
+}
+
+
 /*bootstrap*/
 
 .breadcrumb-item+.breadcrumb-item::before{
