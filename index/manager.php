@@ -7,7 +7,7 @@
  								<?php 
 									$path = "uploads/".$_SESSION['userId'].".jpg";
 									if (!file_exists($path)) {
-										$path = "assets/img/".getUserData($_SESSION['login_user'], "userLevelId").".jpg";
+										$path = "assets/img/".getUserData($_SESSION['login_user'], "userLevelId").getUserData($_SESSION['login_user'], "sex").".jpg";
 									}
 								?>
  								<img src="http://localhost/HospitalManagementSystem/<?php echo $path; ?>" alt="">
@@ -42,7 +42,7 @@
  							</ul>
  						</div>
  						<div class="row">
- 							<a href="">
+ 							<a href="../profile">
  								<button class="btn btn-light">لیست کامل</button>
  							</a>
  						</div>
@@ -68,27 +68,26 @@
  						</div>
  						<div class="row">
  							<ul>
- 								<a href="">
+ 								<?php 
+ 									$sql = "select * from ".UserTable." ORDER BY id desc LIMIT 5";
+ 									$result = mysqli_query(connection(), $sql);
+ 									while($feild = mysqli_fetch_array($result)) {
+											$path = "../uploads/".$feild['id'].".jpg";
+											if (!file_exists($path)) {
+												$path = "../assets/img/".$feild['userLevelId'].$feild['sex'].".jpg";
+											}
+										
+ 								?>
+ 								<a href="../profile/?id=<?php echo $feild['id']; ?>">
  									<li>
- 										<i></i>
- 										<span>نام بیمار یک</span>
- 										<small></small>
+ 										<div class="row" style="padding: 0;">
+ 											<i class="col-md-3"><img src="<?php echo $path; ?>" class="col" alt=""></i>
+ 											<span class="col-md-9"><?php echo $feild['name']." ".$feild['lastName']; ?></span>
+ 											<small class="col-md-12 text-center"><?php echo $feild['nationalCode']; ?></small>
+ 										</div>
  									</li>
  								</a>
- 								<a href="">
- 									<li>
- 										<i></i>
- 										<span>نام بیمار دو</span>
- 										<small></small>
- 									</li>
- 								</a>
- 								<a href="">
- 									<li>
- 										<i></i>
- 										<span>نام بیمار سه</span>
- 										<small></small>
- 									</li>
- 								</a>
+ 								<?php } ?>
  							</ul>
  						</div>
  						<div class="row">

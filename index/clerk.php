@@ -7,7 +7,7 @@
  								<?php 
 									$path = "uploads/".$_SESSION['userId'].".jpg";
 									if (!file_exists($path)) {
-										$path = "assets/img/".getUserData($_SESSION['login_user'], "userLevelId").".jpg";
+										$path = "assets/img/".getUserData($_SESSION['login_user'], "userLevelId").getUserData($_SESSION['login_user'], "sex").".jpg";
 									}
 								?>
  								<img src="http://localhost/HospitalManagementSystem/<?php echo $path; ?>" alt="">
@@ -18,43 +18,31 @@
  								<a href="">
  									<li>
  										<small class="label">نام</small>
- 										محمد حسین
+ 										<?php echo getUserData($_SESSION['login_user'], "name"); ?>
  									</li>
  								</a>
- 									<a href="">
+ 								<a href="">
  									<li>
  										<small class="label">نام خانوادگی</small>
- 										گلستانی
+ 										<?php echo getUserData($_SESSION['login_user'], "lastName"); ?>
  									</li>
  								</a>
- 									<a href="">
+ 								<a href="">
  									<li>
  										<small class="label">نام پدر</small>
- 										جواد
+ 										<?php echo getUserData($_SESSION['login_user'], "fatherName"); ?>
  									</li>
  								</a>
- 									<a href="">
+ 								<a href="">
  									<li>
  										<small class="label">کد ملی</small>
- 										105082...
- 									</li>
- 								</a>
- 									<a href="">
- 									<li>
- 										<small class="label">کد نظام پزشکی</small>
- 										0bbbb00000
- 									</li>
- 								</a>
- 									<a href="">
- 									<li>
- 										<small class="label">تخصص</small>
- 										هوشبری
+ 										<?php echo $_SESSION['login_user']; ?>
  									</li>
  								</a>
  							</ul>
  						</div>
  						<div class="row">
- 							<a href="">
+ 							<a href="../profile">
  								<button class="btn btn-light">لیست کامل</button>
  							</a>
  						</div>
@@ -65,45 +53,41 @@
  						</div>
  						<div class="row">
  							<ul>
- 								<a href="">
- 									<li>تشخیص بیماری</li>
+ 								<a href="../createUser">
+ 									<li>افزودن کاربر</li>
  								</a>
- 								<a href="">
- 									<li>تعریف فرآیند درمان</li>
- 								</a>
- 								<a href="">
- 									<li>تجویز دارو</li>
+ 								<a href="../setIll">
+ 									<li>تعیین بیمار</li>
  								</a>
  							</ul>
  						</div>
  					</div>
  					<div class="col-md-4 section section3">
  						<div class="row">
- 							<p>لیست اعضا</p>
+ 							<p>لیست کاربران</p>
  						</div>
  						<div class="row">
  							<ul>
- 								<a href="">
+ 								<?php 
+ 									$sql = "select * from ".UserTable." ORDER BY id desc LIMIT 5";
+ 									$result = mysqli_query(connection(), $sql);
+ 									while($feild = mysqli_fetch_array($result)) {
+											$path = "../uploads/".$feild['id'].".jpg";
+											if (!file_exists($path)) {
+												$path = "../assets/img/".$feild['userLevelId'].$feild['sex'].".jpg";
+											}
+										
+ 								?>
+ 								<a href="../profile/?id=<?php echo $feild['id']; ?>">
  									<li>
- 										<i></i>
- 										<span>نام بیمار یک</span>
- 										<small></small>
+ 										<div class="row" style="padding: 0;">
+ 											<i class="col-md-3"><img src="<?php echo $path; ?>" class="col" alt=""></i>
+ 											<span class="col-md-9"><?php echo $feild['name']." ".$feild['lastName']; ?></span>
+ 											<small class="col-md-12 text-center"><?php echo $feild['nationalCode']; ?></small>
+ 										</div>
  									</li>
  								</a>
- 								<a href="">
- 									<li>
- 										<i></i>
- 										<span>نام بیمار دو</span>
- 										<small></small>
- 									</li>
- 								</a>
- 								<a href="">
- 									<li>
- 										<i></i>
- 										<span>نام بیمار سه</span>
- 										<small></small>
- 									</li>
- 								</a>
+ 								<?php } ?>
  							</ul>
  						</div>
  						<div class="row">

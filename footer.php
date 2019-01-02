@@ -1,8 +1,13 @@
 			</div>
+			<?php 
+				if(getUserData(getNationalCode($_SESSION['userId']), "userLevelId") == 3){
+					//echo "<!-- ";
+			?>
 			<div class="massageBox col-md-4">
 				<button id="massage" class="col-12 btn btn-primary" onclick="show_massage_box()">کمیسیون پزشکی</button>
  				<iframe id="chatBox" class="col-12" src="../massage/index.php" frameborder="0"></iframe>
 			</div>
+			<?php } ?>
 		</div>
 	</div>
     <script src="http://localhost/HospitalManagementSystem/assets/anime-master/anime.min.js"></script>

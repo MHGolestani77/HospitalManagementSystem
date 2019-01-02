@@ -158,7 +158,7 @@
 	</div>
 	<?php 
 		if (getUserData($nationalCode, "userLevelId") == 1) {
-			include 'mabager.php';
+			include 'manager.php';
 		}elseif (getUserData($nationalCode, "userLevelId") == 2) {
 			include 'clerk.php';
 		}elseif (getUserData($nationalCode, "userLevelId") == 3) {

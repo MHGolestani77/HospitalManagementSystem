@@ -41,7 +41,8 @@ function getActionName($id){
 			   'sptu' => 'تعیین فرآیند',
 			   'smtu' => 'تعیین دارو',
 			   'st' => 'ثبت نتیجه آزمایش',
-			   'sm' => 'ارسال پیام',);
+			   'sm' => 'ارسال پیام',
+			   'ch' => 'گزارش گیری',);
 	return $title[$id];
 }
 
@@ -131,7 +132,7 @@ function setIll($nationalCode, $doctorId){
 	$date = new jDateTime(true, true, 'Asia/Tehran');
 
 	$Insert = "INSERT INTO ".illsTable." (userId, doctorId, loginDate) 
-	VALUES ('".getUserData($nationalCode, "id")."', '$doctorId', '".$date->date("r")."');";
+	VALUES ('".getUserData($nationalCode, "id")."', '$doctorId', '".$date->date("Y/m/d")."');";
 	mysqli_query(connection(), $Insert);
 }
 
