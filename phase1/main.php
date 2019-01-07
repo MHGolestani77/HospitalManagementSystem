@@ -32,7 +32,7 @@
 					<h4>توضیحات پروژه</h4>
 					<div class="row">
 						<div class="col-lg-6 explain">توضیحات پروژه به شرح زیر می باشد.توضیحات پروژه به شرح زیر می باشد.توضیحات پروژه به شرح زیر می باشد.توضیحات پروژه به شرح زیر می باشد.توضیحات پروژه به شرح زیر می باشد.توضیحات پروژه به شرح زیر می باشد.توضیحات پروژه به شرح زیر می باشد.توضیحات پروژه به شرح زیر می باشد.توضیحات پروژه به شرح زیر می باشد.توضیحات پروژه به شرح زیر می باشد.توضیحات پروژه به شرح زیر می باشد.</div>
-						<div class="col-lg-6 brand"><img src="" alt="hms"></div>
+						<div class="col-lg-6 brand"><img src="../assets/img/logo.jpg" alt="hms" class="col"></div>
 					</div>
 				</div>
 			</div>
@@ -111,11 +111,11 @@
 			</div>
 			<hr>
 			<div class="row">
-				<div class="col-lg-8"><p>کلیه حقوق این سایت برای HMS محفوظ است.</p></div>
-				<div class="row col-lg-4 tells">
-					<a href="#"><img src="" alt="instagram"></a>
-					<a href="#"><img src="" alt="telegram"></a>
-					<a href="#"><img src="" alt="soroush"></a>
+				<div class="col-lg-10"><p>کلیه حقوق این سایت برای HMS محفوظ است.</p></div>
+				<div class="row col-lg-2 tells">
+					<a class="col" style="padding: 0;" href="#"><img class="col" src="../assets/img/instagram.png" alt="instagram"></a>
+					<a class="col" style="padding: 0;" href="#"><img class="col" src="../assets/img/telegram.png" alt="telegram"></a>
+					<a class="col" style="padding: 0;" href="#"><img class="col" src="../assets/img/soroush.png" alt="soroush"></a>
 				</div>
 			</div>
 		</div>

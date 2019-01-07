@@ -134,6 +134,7 @@ function setIll($nationalCode, $doctorId){
 	$Insert = "INSERT INTO ".illsTable." (userId, doctorId, loginDate) 
 	VALUES ('".getUserData($nationalCode, "id")."', '$doctorId', '".$date->date("Y/m/d")."');";
 	mysqli_query(connection(), $Insert);
+	setAction("sdtu", getUserData($nationalCode, "id"));
 }
 
 function editIll($var, $value, $nationalCode){
@@ -165,6 +166,7 @@ function setIllness($id, $illnessId){
 	$Insert = "INSERT INTO ".illnessTable." (illId, illnessId) 
 	VALUES ('$id', '$illnessId');";
 	mysqli_query(connection(), $Insert);
+	setAction("situ", $id);
 }
 
 function getIllnessData($id, $var){
@@ -305,6 +307,7 @@ function addProcess($illnessId, $title, $rank){
 	$Insert = "INSERT INTO ".processTable." (illnessId, title, rank) 
 	VALUES ($illnessId, '$title', $rank);";
 	mysqli_query(connection(), $Insert);
+	setAction("sptu", getIllData(getIllnessData($id, "illId")), "userId");
 }
 
 function editProcess(){
@@ -320,6 +323,7 @@ function setMedicine($illnessId, $title){
 	$Insert = "INSERT INTO ".medicineTable." (illnessId, title) 
 	VALUES ($illnessId, '$title');";
 	mysqli_query(connection(), $Insert);
+	setAction("smtu", getIllData(getIllnessData($id, "illId")), "userId");
 }
 
 function editMedicine(){

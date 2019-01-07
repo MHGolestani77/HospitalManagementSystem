@@ -599,18 +599,19 @@ div.main_page div.first_item nav.main_nav button:hover{
 }
 div.main_page div.second_item{
 	min-height: 550px;
-	background-color: #aee5e0;
+	background-color: #f3f3f3;
 	padding-top: 40px;
 }
 div.main_page div.second_item div.row{}
 div.main_page div.second_item div.row div.explain{
-
+	line-height: 30px;
+    text-align: justify;
 }
 div.main_page div.second_item div.row div.brand{}
 div.main_page div.second_item div.row div.brand img{}
 div.main_page div.third_item{
 	min-height: 550px;
-	background-color: #f6f6f6;
+	background-color: #aee5e0;
 	padding-top: 40px;
 }
 div.main_page div.third_item div.row{
@@ -680,8 +681,9 @@ footer div div.items div{}
 footer div div.items div h6{
 	text-align: center;
 	font-size: 21px;
+    color: #909090;
 }
-footer div div.items div p{}
+footer div div.items div p{text-align: justify;}
 footer div div.items div ol{}
 footer div div.items div ol li{
 	list-style: square;
