@@ -99,65 +99,50 @@ var loginLogo = anime({
   delay: function(el, i) { return i * 250 }, // All properties except 'scale' inherit 250ms delay
 });
 // *********<finish>*********
-var setting = anime (
-        {
-            targets : 'div.main.container.row.navbar a' , // I dont know what im doing 
-            opacity : 
-                    {
-                        value : ['0' , '1'] ,
-                        duration : 1500 ,
-                        delay : 650 ,
-                        easing : 'easeInOutSine' ,
-                    } ,
-           backgroundColor: [rgb(255 , 255 , 255) , rgb(209 , 208 ,208)] ,
-        }
-        ) ;
 
-var division = anime(
-        {
-            targets : 'div.container.row.main w-100' ,
-            display : none ,
-            duration : 1600 ,
-            delay : 800 ,
-            easing : inline ,
-            display : block 
-        }
-        ) ;
-var li = anime (
-        {
-            targets : 'div.container.row.main w-100.col-md-4 section section1.row.ul.li  ' ,
-             opacity : 
-                    {
-                        value : ['0' , '1'] ,
-                        duration : 1600 ,
-                        delay : 800 ,
-                        easing : 'easeInOutSine' ,
-                    } ,
-        }
-        ) ;
-
-var li2 = anime(
-        {
-            targets :' div.container.row.main w-100.col-md-4 section section2.row.ul.li' ,
-             opacity : 
-                    {
-                        value : ['0' , '1'] ,
-                        duration : 2000 ,
-                        delay : 1000 ,
-                        easing : 'easeInOutSine' ,
-                    } ,
-        }
-        );
-
-var li3 = anime(
-        {
-            targets : 'div.container.row.main w-100.col-md-4 section section3.row.ul.li' ,
-             opacity : 
-                    {
-                        value : ['0' , '1'] ,
-                        duration : 2400 ,
-                        delay : 1200 ,
-                        easing : 'easeInOutSine' ,
-                    } ,
-        }
-        ) ;
+var editbtn = anime({
+  targets: '#Editbtn',
+  opacity: 0,
+  duration: 0,
+  easing: 'easeInOutSine',
+});
+var i = 0;
+function enable_edit(){
+  if (i % 2 == 0) {
+    var myElement = document.getElementById("Edit").disabled = false;
+    var editbtn = anime({
+      targets: '#Editbtn',
+      translateY: [25, 0],
+      opacity: [0, 1],
+      duration: 800,
+      easing: 'easeInOutSine',
+    });
+  }else{
+    var myElement = document.getElementById("Edit").disabled = true;
+    var editbtn = anime({
+      targets: '#Editbtn',
+      opacity: 0,
+      duration: 0,
+      easing: 'easeInOutSine',
+    });
+  }
+  i++;
+}
+var j = 0;
+function enable_date(){
+  if (j % 2 == 0) {
+    var myElement = document.getElementById("date").disabled = false;
+  }else{
+    var myElement = document.getElementById("date").disabled = true;
+  }
+  j++;
+}
+var k = 0;
+function show_massage_box(){
+  if (k % 2 == 0) {
+    var myElement = document.getElementById("chatBox").style.height = "300px";
+  }else{
+    var myElement = document.getElementById("chatBox").style.height = "0";
+  }
+  k++;
+}

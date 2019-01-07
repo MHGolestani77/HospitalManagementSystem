@@ -10,10 +10,10 @@
 			}elseif ($_POST['userType'] == 3) {
 				setDoctor(getUserData($nationalCode, "id"), "");
 			}elseif ($_POST['userType'] == 4) {
-				require_once dirname(__FILE__) . '/jdatetime.class.php';
-				$date = new jDateTime(); //Creates a new instance
-				$date = new jDateTime(true, true, 'Asia/Tehran');
-				setIll($nationalCode, 0, $date->date("r")."");
+				// require_once dirname(__FILE__) . '/jdatetime.class.php';
+				// $date = new jDateTime(); //Creates a new instance
+				// $date = new jDateTime(true, true, 'Asia/Tehran');
+				setIll($nationalCode, 0);
 			}
 		?>
 
