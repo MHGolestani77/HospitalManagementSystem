@@ -5,9 +5,9 @@
  						<div class="row">
  							<div class="col-md-7">
  								<?php 
-									$path = "uploads/".$_SESSION['userId'].".jpg";
+									$path = "uploads/".$_SESSION['userId'].".jpg?t=".rand();
 									if (!file_exists($path)) {
-										$path = "assets/img/".getUserData($_SESSION['login_user'], "userLevelId").getUserData($_SESSION['login_user'], "sex").".jpg";
+										$path = "assets/img/".getUserData($_SESSION['login_user'], "userLevelId").getUserData($_SESSION['login_user'], "sex").".jpg?t=".rand();
 									}
 								?>
  								<img src="http://localhost/HospitalManagementSystem/<?php echo $path; ?>" alt="">

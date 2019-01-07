@@ -557,8 +557,24 @@ div.main_page div h4{
 	color: #6d7378;
 	padding-bottom: 20px;
 }
+div.main_page .row p {
+	text-align: justify;
+}
+div.main_page .row i {
+	border-radius: 100%;
+    background: whitesmoke;
+    display: block;
+    height: 120px;
+    margin: 35px auto;
+}
+div.main_page .row i svg {
+	margin: auto;
+    display: block;
+    padding: 10px 0;
+    color: #aee5e0;
+}
 div.main_page div.first_item{
-	min-height: 500px;
+	min-height: 490px;
 	width: 100%;
 	background-image: url('../assets/img/header.jpg');
 	background-size: 100%;
@@ -598,7 +614,7 @@ div.main_page div.first_item nav.main_nav button:hover{
 
 }
 div.main_page div.second_item{
-	min-height: 550px;
+	min-height: 400px;
 	background-color: #f3f3f3;
 	padding-top: 40px;
 }
