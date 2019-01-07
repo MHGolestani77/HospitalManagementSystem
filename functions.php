@@ -51,8 +51,8 @@ function setAction($actionId, $id){
 	$date = new jDateTime(); //Creates a new instance
 	$date = new jDateTime(true, true, 'Asia/Tehran');
 	
-	$Insert = "INSERT INTO ".blackBox." (title, date, userId) 
-	VALUES ('".getActionName($actionId)."', '".$date->date("Y/m/d")."', $id);";
+	$Insert = "INSERT INTO ".blackBox." (title, date, time, userId) 
+	VALUES ('".getActionName($actionId)."', '".$date->date("Y/m/d")."', '".$date->date("H:i:ns")."', $id);";
 	mysqli_query(connection(), $Insert);
 }
 

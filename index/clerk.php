@@ -59,6 +59,9 @@
  								<a href="../setIll">
  									<li>تعیین بیمار</li>
  								</a>
+ 								<a href="../setTest">
+ 									<li>ثبت آزمایش</li>
+ 								</a>
  							</ul>
  						</div>
  					</div>

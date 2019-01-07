@@ -21,7 +21,7 @@
 	if(isset($_POST['group'])){
 		$group = $_POST['group'];
 		$url = "sendMassage.php";
-		$sql = "select * from ".massage." where subject ='$group' ORDER BY date DESC";
+		$sql = "select * from ".massage." where subject ='$group' ORDER BY id DESC";
 		$result = mysqli_query(connection(), $sql);
 	}
 ?>
