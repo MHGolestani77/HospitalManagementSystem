@@ -18,9 +18,9 @@
 					<div class=" navbar container">
 						<div class="navbar-header"><a href="#" class="navbar-header"><img src="../assets/img/logo.png" alt="hms"></a></div>
 						<ul class="navbar">
-							<li class="nav-item"><a href="#">توضیحات پروژه</a></li>
-							<li class="nav-item"><a href="#">ویژگی های سامانه</a></li>
-							<li class="nav-item"><a href="#">ارتباط با ما</a></li>
+							<li class="nav-item"><a href="#explain-project">توضیحات پروژه</a></li>
+							<li class="nav-item"><a href="#features">ویژگی های سامانه</a></li>
+							<li class="nav-item"><a href="#comunicate">ارتباط با ما</a></li>
 						</ul>
 						<a href="#"><button>ورود</button></a>
 					</div>
@@ -28,6 +28,7 @@
 			</div>
 			<div class="second_item">
 				<div class="container">
+					<a name="explain-project"></a>
 					<h4>توضیحات پروژه</h4>
 					<div class="row">
 						<div class="col-lg-6 explain">توضیحات پروژه به شرح زیر می باشد.توضیحات پروژه به شرح زیر می باشد.توضیحات پروژه به شرح زیر می باشد.توضیحات پروژه به شرح زیر می باشد.توضیحات پروژه به شرح زیر می باشد.توضیحات پروژه به شرح زیر می باشد.توضیحات پروژه به شرح زیر می باشد.توضیحات پروژه به شرح زیر می باشد.توضیحات پروژه به شرح زیر می باشد.توضیحات پروژه به شرح زیر می باشد.توضیحات پروژه به شرح زیر می باشد.</div>
@@ -37,6 +38,7 @@
 			</div>
 			<div class="third_item">
 				<div class="container">
+					<a name="features"></a>
 					<h4>ویژگی های سامانه</h4>
 					<div class="row">
 						<div class="col-lg-3 item">
@@ -53,6 +55,7 @@
 			</div>
 			<div class="forth_item">
 				<div class="container">
+					<a name="comunicate"></a>
 					<h4>ارتباط با ما</h4>
 					<p>شما میتوانید از طریق فرم زیر با ما در ارتباط باشید.</p>
 					<form action="">
@@ -65,5 +68,57 @@
 			</div>
 		<!-- </div> -->
 	</div>
+	<footer>
+		<div class="container">
+			<div class="row items">
+				<div class="col-lg-4">
+					<h6>درباره ما</h6>
+					<p>شرکت دانش بنیان ............در سال 1397 آغاز به کار کرد و فعالیت هایی در زمینه توسعه فعالیت های دیجیتال فعالیت می کند.</p>
+				</div>
+				<div class="col-lg-4">
+					<h6>راه های ارتباطی</h6>
+					<ol class="comunication">
+						<li>
+							<div class="row">
+								<div class="label col-lg-5">شماره تماس:</div>
+								<div class="item col-lg-7">+989300000000</div>
+							</div>
+						</li>
+						<li>
+							<div class="row">
+								<div class="label col-lg-5">ایمیل:</div>
+								<div class="item col-lg-7">info@hms.com</div>
+							</div>
+						</li>
+						<li>
+							<div class="row">
+								<div class="label col-lg-5">آدرس:</div>
+								<div class="item col-lg-7">شاهرود - دانشگاه صنعتی شاهرود</div>
+							</div>
+						</li>
+					</ol>
+				</div>
+				<div class="col-lg-4">
+					<h6>مشتریان</h6>
+					<ol class="customers">
+						<li><span>بیمارستان رضوی - مشهد</span></li>
+						<li><span>بیمارستان قائم - مشهد</span></li>
+						<li><span>بیمارستان امام حسین - مشهد</span></li>
+						<li><span>بیمارستان اقبال - تهران</span></li>
+						<li><span>بیمارستان بیمارستان بقیة الله - تهران</span></li>
+					</ol>
+				</div>
+			</div>
+			<hr>
+			<div class="row">
+				<div class="col-lg-8"><p>کلیه حقوق این سایت برای HMS محفوظ است.</p></div>
+				<div class="row col-lg-4 tells">
+					<a href="#"><img src="" alt="instagram"></a>
+					<a href="#"><img src="" alt="telegram"></a>
+					<a href="#"><img src="" alt="soroush"></a>
+				</div>
+			</div>
+		</div>
+	</footer>
 </body>
 </html>

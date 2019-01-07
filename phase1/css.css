@@ -663,6 +663,53 @@ div.main_page div.forth_item form input[type="submit"]{
 }
 
 
+/*footer*/
+footer{
+	position: relative;
+	bottom: 9px;
+	background-color: #3b3b3b;
+	padding-top: 75px;
+	color: #585858;
+	overflow: auto;
+}
+footer div{}
+footer div div.items{
+	min-height: 300px;
+}
+footer div div.items div{}
+footer div div.items div h6{
+	text-align: center;
+	font-size: 21px;
+}
+footer div div.items div p{}
+footer div div.items div ol{}
+footer div div.items div ol li{
+	list-style: square;
+	margin-bottom: 7px;
+}
+footer div div.items div ol.comunication{
+	color: #37cbdd;
+}
+footer div div.items div ol.comunication li{
+	padding-right: 10px;
+}
+footer div div.items div ol.customers{
+	color: #00f317;
+}
+footer div div.items div ol.customers li{
+	
+}
+footer div div.items div ol.customers li span{
+	color: #585858;
+}
+footer div div.items div ol li div{
+	color: #585858;;
+}
+footer div div.items div ol li div div.label{}
+footer div div.items div ol li div div.item{}
+footer div div.tells{
+	direction: ltr;
+}
 /*bootstrap*/
 
 .breadcrumb-item+.breadcrumb-item::before{
