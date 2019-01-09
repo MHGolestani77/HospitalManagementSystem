@@ -591,7 +591,7 @@ div.main_page div.first_item nav.main_nav div.navbar-header a img{
 	width: 125px;
 }
 div.main_page div.first_item nav.main_nav ul{
-	
+	margin-bottom: 0px;
 }
 div.main_page div.first_item nav.main_nav ul li{
 	margin-left: 40px;
@@ -599,19 +599,24 @@ div.main_page div.first_item nav.main_nav ul li{
 div.main_page div.first_item nav.main_nav ul li a{
 	color: #ffffff;
 }
+div.main_page div.first_item nav.main_nav ul li a:hover{
+	color: #000000cc;
+}
 div.main_page div.first_item nav.main_nav button{
 	background-color: unset;
 	border: 2px solid #ffffff;
 	color: #ffffff;
-	line-height: 50px;
+	line-height: 30px;
 	text-align: center;
 	font-size: 20px;
 	vertical-align: middle;
-	height: 50px;
+	height: 40px;
 	width: 140px;
 }
 div.main_page div.first_item nav.main_nav button:hover{
-
+	background: #fff;
+	color: #0000009c;
+	cursor: pointer;
 }
 div.main_page div.second_item{
 	min-height: 400px;
@@ -667,6 +672,14 @@ div.main_page div.forth_item form input{
 	width: 400px;
 	color: #ffffff;
 }
+div.main_page div.forth_item form input:hover{
+	background: #638e704a;
+	border-bottom: none;
+}
+div.main_page div.forth_item form input:focus{
+	background: #638e704a;
+	border-bottom: none;
+}
 div.main_page div.forth_item form input.massage{
 	min-height: 110px;
 }
@@ -678,7 +691,11 @@ div.main_page div.forth_item form input[type="submit"]{
 	background-color: #ffffff;
 	color: #86a875;
 }
-
+div.main_page div.forth_item form input[type="submit"]:hover{
+	background: #4fe154;
+	color: #0000009c;
+	cursor: pointer;
+}
 
 /*footer*/
 footer{
