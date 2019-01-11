@@ -570,8 +570,9 @@ div.main_page .row i {
 div.main_page .row i svg {
 	margin: auto;
     display: block;
-    padding: 10px 0;
+    padding: 22px 0;
     color: #aee5e0;
+    height: 100%;
 }
 div.main_page div.first_item{
 	min-height: 490px;
@@ -645,7 +646,9 @@ div.main_page div.third_item div.row div.item{
 	background-color: #ffffff;
 	margin: 20px;
 }
-div.main_page div.third_item div.row div.item p{}
+div.main_page div.third_item div.row div.item p{
+	text-align: center;
+}
 div.main_page div.forth_item{
 	min-height: 550px;
 	background-color: #89f68d;
@@ -672,13 +675,14 @@ div.main_page div.forth_item form input{
 	width: 400px;
 	color: #ffffff;
 }
-div.main_page div.forth_item form input:hover{
+/*div.main_page div.forth_item form input:hover{
 	background: #638e704a;
-	border-bottom: none;
-}
+	border-bottom: 3px solid #128f16;
+}*/
 div.main_page div.forth_item form input:focus{
-	background: #638e704a;
-	border-bottom: none;
+	/*background: #638e704a;*/
+	outline: none;
+	border-bottom: 3px solid #128f16;
 }
 div.main_page div.forth_item form input.massage{
 	min-height: 110px;
@@ -690,6 +694,7 @@ div.main_page div.forth_item form input[type="email"]{}
 div.main_page div.forth_item form input[type="submit"]{
 	background-color: #ffffff;
 	color: #86a875;
+	border-bottom: none;
 }
 div.main_page div.forth_item form input[type="submit"]:hover{
 	background: #4fe154;
