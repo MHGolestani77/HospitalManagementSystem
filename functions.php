@@ -52,7 +52,7 @@ function setAction($actionId, $id){
 	$date = new jDateTime(true, true, 'Asia/Tehran');
 	
 	$Insert = "INSERT INTO ".blackBox." (title, date, time, userId) 
-	VALUES ('".getActionName($actionId)."', '".$date->date("Y/m/d")."', '".$date->date("H:i:ns")."', $id);";
+	VALUES ('".getActionName($actionId)."', '".$date->date("Y/m/d")."', '".$date->date("H:i:s")."', $id);";
 	mysqli_query(connection(), $Insert);
 }
 
@@ -62,8 +62,7 @@ function addUser($name, $lastName, $fatherName, $sex, $nationalCode, $phoneNumbe
 	VALUES ('$name', '$lastName', '$fatherName', $sex, '$nationalCode', '$phoneNumber', '$birthDate', '$address', $userLevelId, '$insuranceEndTime', '".createPassWord($password, $nationalCode)."');";
 	if (!checkUser($nationalCode)){
 		mysqli_query(connection(), $Insert);
-		if(checkUser($nationalCode))
-			setAction("au" ,getUserData($nationalCode, "id"));
+		setAction("au", $_SESSION['userId']);
 	}
 	else
 		echo "<script>window.location.href = 'http://localhost/HospitalManagementSystem/createUser/?result=error';</script>";
@@ -72,13 +71,13 @@ function addUser($name, $lastName, $fatherName, $sex, $nationalCode, $phoneNumbe
 function editUser($var, $value, $nationalCode){
 	$Update = "UPDATE ".UserTable." SET $var = '$value' WHERE nationalCode = $nationalCode;";
 	mysqli_query(connection(), $Update);
-	setAction("eu" ,getUserData($nationalCode, "id"));
+	setAction("eu", $_SESSION['userId']);
 }
 
 function deleteUser($id){
 	$Delete = "DELETE FROM ".UserTable." WHERE id = $id;";
 	mysqli_query(connection(), $Delete);
-	setAction("du" ,$id);
+	setAction("du", $_SESSION['userId']);
 }
 
 function getUserData($nationalCode, $var){
@@ -134,7 +133,6 @@ function setIll($nationalCode, $doctorId){
 	$Insert = "INSERT INTO ".illsTable." (userId, doctorId, loginDate) 
 	VALUES ('".getUserData($nationalCode, "id")."', '$doctorId', '".$date->date("Y/m/d")."');";
 	mysqli_query(connection(), $Insert);
-	setAction("sdtu", getUserData($nationalCode, "id"));
 }
 
 function editIll($var, $value, $nationalCode){
@@ -166,7 +164,7 @@ function setIllness($id, $illnessId){
 	$Insert = "INSERT INTO ".illnessTable." (illId, illnessId) 
 	VALUES ('$id', '$illnessId');";
 	mysqli_query(connection(), $Insert);
-	setAction("situ", $id);
+	setAction("situ", $_SESSION['userId']);
 }
 
 function getIllnessData($id, $var){
@@ -190,14 +188,10 @@ function getIllnessDetail($id){
 	return $row['title'];
 }
 
-function setTest($title, $fileName, $id){
-	require_once dirname(__FILE__) . '/jdatetime.class.php';
-	$date = new jDateTime(); //Creates a new instance
-	$date = new jDateTime(true, true, 'Asia/Tehran');
-
-	$insert = "INSERT INTO ".test." (illnessId, title ,fileName ,date) VALUES ($id, '$title', '$fileName', '".$date->date('Y/m/d')."')";
+function setTest($title, $fileName, $date, $id){
+	$insert = "INSERT INTO ".test." (illnessId, title ,fileName ,date) VALUES ($id, '$title', '$fileName', '$date')";
 	mysqli_query(connection(), $insert);
-	setAction("st", getIllData(getIllnessData($id, "illId"), "userId"));
+	setAction("st", $_SESSION['userId']);
 }
 
 
@@ -291,7 +285,7 @@ function createMassage($mainText, $subject, $id){
 	$insert = "INSERT INTO ".massage." (mainText, subject, senderId, date, time)
 									VALUES ('$mainText', '$subject', $id, '".$date->date("Y/m/d")."', '".$date->date("H:i")."')";
 	mysqli_query(connection(), $insert);
-	setAction("sm", $id);
+	setAction("sm", $_SESSION['userId']);
 }
 
 function editMassage(){
@@ -307,7 +301,7 @@ function addProcess($illnessId, $title, $rank){
 	$Insert = "INSERT INTO ".processTable." (illnessId, title, rank) 
 	VALUES ($illnessId, '$title', $rank);";
 	mysqli_query(connection(), $Insert);
-	setAction("sptu", getIllData(getIllnessData($id, "illId")), "userId");
+	setAction("sptu", $_SESSION['userId']);
 }
 
 function editProcess(){
@@ -323,7 +317,7 @@ function setMedicine($illnessId, $title){
 	$Insert = "INSERT INTO ".medicineTable." (illnessId, title) 
 	VALUES ($illnessId, '$title');";
 	mysqli_query(connection(), $Insert);
-	setAction("smtu", getIllData(getIllnessData($id, "illId")), "userId");
+	setAction("smtu", $_SESSION['userId']);
 }
 
 function editMedicine(){

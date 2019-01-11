@@ -128,15 +128,15 @@ function enable_edit(){
   }
   i++;
 }
-var j = 0;
-function enable_date(){
-  if (j % 2 == 0) {
-    var myElement = document.getElementById("date").disabled = false;
-  }else{
-    var myElement = document.getElementById("date").disabled = true;
-  }
-  j++;
-}
+// var j = 0;
+// function enable_date(){
+//   if (j % 2 == 0) {
+//     var myElement = document.getElementById("date").disabled = false;
+//   }else{
+//     var myElement = document.getElementById("date").disabled = true;
+//   }
+//   j++;
+// }
 var k = 0;
 function show_massage_box(){
   if (k % 2 == 0) {

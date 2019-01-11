@@ -1,12 +1,13 @@
-
-	<div class="row">
-		<input type="button" onclick="enable_date()" value="آزمایش قبلی" class="btn col-md-5 w-100">
-	</div>
+	<?php 
+		require_once dirname(__FILE__) . '/jdatetime.class.php';
+		$date = new jDateTime(); //Creates a new instance
+		$date = new jDateTime(true, true, 'Asia/Tehran');
+	?>
 	<div class="row">
 		<input type="text" name="title" class="col-md-5" placeholder="عنوان آزمایش" required>
 	</div>
 	<div class="row">
-		<input type="text" id="date" name="date" class="col-md-5" placeholder="تاریخ آزمایش: --/--/--13" disabled>
+		<input type="text" id="date" name="date" class="col-md-5" placeholder="تاریخ آزمایش: --/--/--13" value="<?php echo $date->date("Y/m/d"); ?>" required>
 	</div>
 	<div class="row">
 	    <label for="chooseFile" class="btn col-md-5" style="margin: 10px auto;background: #fff;border: 2px solid #aeefe4;border-radius: 10px;color: #389686;">

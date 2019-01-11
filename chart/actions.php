@@ -48,10 +48,10 @@
 			$persent[$feildGetLabels['id']] = 0;
 			
 		}
-		$persent[1] = $data[1]/$sum*100;
-		$persent[2] = $data[2]/$sum*100;
-		$persent[3] = $data[3]/$sum*100;
-		$persent[4] = $data[4]/$sum*100;
+		$persent[1] = round($data[1]/$sum*100, 2);
+		$persent[2] = round($data[2]/$sum*100, 2);
+		$persent[3] = round($data[3]/$sum*100, 2);
+		$persent[4] = round($data[4]/$sum*100, 2);
 	?>
 
 	<canvas id="myChart"  width="300" height="300" class="chartjs-render-monitor" style="display: block; width: 300px; height: 300px;"></canvas>

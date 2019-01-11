@@ -2,6 +2,7 @@
 		
  		<?php 
 			editIll("doctorId", $_POST['doctorId'], $_POST['nationalCode']);
+			setAction("sdtu", $_SESSION['userId']);
 		?>
 
 		<div class="row">
